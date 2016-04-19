@@ -28,6 +28,11 @@ colnames(datb4) <- names
 
 datall = rbind(datb1, datb2, datb3, datb4)
 
+# Function to find variables with all data missing
+datacolwithallna = function(dataset) {
+  colnames(dataset)[which(sapply(1:ncol(dataset), function(x)all(is.na(dataset[,x]))))]
+}
+
 
 #### Question 1 ####
 
