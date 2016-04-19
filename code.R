@@ -34,13 +34,12 @@ datall = rbind(datb1, datb2, datb3, datb4)
 
 
 #### Question 2 ####
-
-
+library(car)
+model2 = lm(cbind(chol, thaldur, thaltime, met, thalach, thalrest, tpeakbps, tpeakbpd, trestbpd, oldpeak, rldv5, rldv5e) ~ proto + restecg + dig + prop + nitr + pro + diuretic, data=datall)
+model2
 
 #### Question 3 ####
 
 
 
 #### Question 4 ####
-
-
