@@ -84,30 +84,7 @@ model2
 #### Question 3 ####
 
 # Cleveland data
-ex3date <- datb1
-
-# Finding variables with a least 80% missing data
-navariables(ex3date, .80)
-
-## They are painloc, painexer, relrest, pncaden, smoke, rldv5, restckm, 
-## exerckm, restef, restwm, exeref, exerwm, thalsev, thalpul, earlobe, 
-## diag, ramus, om2, cathef, junk
-
-constvar(ex3date)
-# proto is a constant variable
-
-
-ex3datf <- ex3date[,c("num", "age", "sex", "cp", "trestbps", "htn", "chol", "cigs", 
-                      "years", "fbs", "famhist", "restecg", "ekgmo", 
-                      "ekgday", "ekgyr", "dig", "prop", "nitr", "pro", 
-                      "diuretic", "thaldur", "thaltime", "met", 
-                      "thalach", "thalrest", "tpeakbps", "tpeakbpd", 
-                      "trestbpd", "exang", "xhypo", "oldpeak", "slope", 
-                      "rldv5e", "ca", "thal", "cmo", "cday", "cyr", 
-                      "lmt", "ladprox", "laddist", "cxmain", "om1", "rcaprox",
-                      "rcadist")]
-
-ex3datf <- na.omit(ex3datf)
+ex3datf <- removenaandconstvar(datb1, .80)
 
 ex3modcle <- lm(num ~ ., data = ex3datf)
 
