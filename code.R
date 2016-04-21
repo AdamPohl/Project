@@ -28,10 +28,6 @@ colnames(datb4) <- names
 
 datall = rbind(datb1, datb2, datb3, datb4)
 
-# Function to find variables with all data missing
-datacolwithallna = function(dataset) {
-  colnames(dataset)[which(sapply(1:ncol(dataset), function(x)all(is.na(dataset[,x]))))]
-}
 
 # Function to find variabes that are missing at least the percent data given
 navariables <- function(dataset, percent) {
@@ -52,10 +48,28 @@ navariables <- function(dataset, percent) {
 
 # Find variables that are constant
 constvar <- function(dataset) {
-  lst <- lapply(ex3date, function(x)length(unique(x)))
-  return(colnames(ex3date)[which(!lst > 1)])
+  lst <- lapply(dataset, function(x)length(unique(x)))
+  return(colnames(dataset)[which(!lst > 1)])
 }
 
+# This function removes empty variables and constant columns
+removenaandconstvar <- function(dataset, x) {
+  # dummy variables
+  dummyvar <- c("id", "ccf", "dummy", "restckm", "exerckm", "thalsev", 
+                "thapul", "earlobe", "lvx1", "lvx2", "lvx3", "lvx4", "lvf", 
+                "cathef", "junk", "place")
+  
+  # Finding variables with a least x missing data
+  missingvarables <- navariables(dataset, x)
+  
+  # Constant variables
+  constvarables <- constvar(dataset)
+  
+  newdataset <- dataset[, !colnames(dataset) %in% unique(c(dummyvar, missingvarables, constvarables))]
+  newdataset <- na.omit(newdataset)
+  
+  return(newdataset)
+}
 
 
 #### Question 1 ####
