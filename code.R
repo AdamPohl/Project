@@ -98,11 +98,19 @@ model2
 #### Question 3 ####
 
 # Cleveland data
-ex3datf <- removenaandconstvar(datb1, .80)
+ex3datcle <- removenaandconstvar(datb1, .8)
 
-ex3modcle <- lm(num ~ ., data = ex3datf)
+ex3modcle <- lm(num ~ ., data = ex3datcle)
 
-ex3pca1 <- princomp(ex3datf[,2:ncol(ex3datf)], cor=TRUE)
-ex3pca1
+
+vif(ex3modcle)
+ex3pcacle <- princomp(ex3datcle[,!colnames(ex3datcle) %in% "num"], cor=TRUE)
+summary(ex3pcacle, loadings = TRUE)
+
+ex3moecle <- lm(ex3datcle[,"num"] ~ ex3pcacle$scores[,1:21])
+summary(ex3moecle)
+
+ex3mofcle <- lm(ex3datcle[,"num"] ~ ex3pcacle$scores)
+summary(ex3mofcle)
 
 #### Question 4 ####
