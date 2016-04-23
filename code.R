@@ -1,5 +1,7 @@
 # setwd("C:/Users/Timothy/Documents/GitHub/Project")
 
+library(car)
+
 names =  c("id", "ccf", "age", "sex", "painloc", "painexer", "relrest", "pncaden", "cp", "trestbps", "htn", "chol", "smoke", "cigs", "years", "fbs", "dm", "famhist", "restecg", "ekgmo", "ekgday", "ekgyr", "dig", "prop", "nitr", "pro", "diuretic", "proto", "thaldur", "thaltime", "met", "thalach", "thalrest", "tpeakbps", "tpeakbpd", "dummy", "trestbpd", "exang", "xhypo", "oldpeak", "slope", "rldv5", "rldv5e", "ca", "restckm", "exerckm", "restef", "restwm", "exeref", "exerwm", "thal", "thalsev", "thalpul", "earlobe", "cmo", "cday", "cyr", "num", "lmt", "ladprox", "laddist", "diag", "cxmain", "ramus", "om1", "om2", "rcaprox", "rcadist", "lvx1", "lvx2", "lvx3", "lvx4", "lvf", "cathef", "junk", "place")
 
 data1 <- scan(file="project_heart_cleveland.txt")
@@ -31,44 +33,56 @@ datall = rbind(datb1, datb2, datb3, datb4)
 
 # Function to find variabes that are missing at least the percent data given
 navariables <- function(dataset, percent) {
-  emptryvariables <- vector()
-  for(i in 1:ncol(dataset)) {
-    currentnacount <- 0
-    for(j in 1:nrow(dataset)) {
-      if(is.na(dataset[j, i])) {
-        currentnacount <- currentnacount + 1
-      }
+    emptryvariables <- vector()
+    for(i in 1:ncol(dataset)) {
+        currentnacount <- 0
+        for(j in 1:nrow(dataset)) {
+            if(is.na(dataset[j, i])) {
+                currentnacount <- currentnacount + 1
+            }
+        }
+        if(currentnacount >= (nrow(dataset) * percent)) {
+            emptryvariables <- c(emptryvariables, colnames(dataset)[i])
+        }
     }
-    if(currentnacount >= (nrow(dataset) * percent)) {
-      emptryvariables <- c(emptryvariables, colnames(dataset)[i])
-    } 
-  }
-  return(emptryvariables)
+    return(emptryvariables)
 }
 
 # Find variables that are constant
 constvar <- function(dataset) {
-  lst <- lapply(dataset, function(x)length(unique(x)))
-  return(colnames(dataset)[which(!lst > 1)])
+    contvar <- vector()
+    for(i in 1:ncol(dataset)) {
+        obs <- dataset[,i]
+        obs <- na.omit(obs)
+        if(length(unique(obs)) == 1) {
+            contvar <- c(contvar, colnames(dataset)[i])
+        }
+    }
+    return(contvar)
 }
 
 # This function removes empty variables and constant columns
 removenaandconstvar <- function(dataset, x) {
-  # dummy variables
-  dummyvar <- c("id", "ccf", "dummy", "restckm", "exerckm", "thalsev", 
-                "thapul", "earlobe", "lvx1", "lvx2", "lvx3", "lvx4", "lvf", 
+    # dummy variables
+    dummyvar <- c("id", "ccf", "dummy", "restckm", "exerckm", "thalsev",
+                "thapul", "earlobe", "lvx1", "lvx2", "lvx3", "lvx4", "lvf",
                 "cathef", "junk", "place")
-  
-  # Finding variables with a least x missing data
-  missingvarables <- navariables(dataset, x)
-  
-  # Constant variables
-  constvarables <- constvar(dataset)
-  
-  newdataset <- dataset[, !colnames(dataset) %in% unique(c(dummyvar, missingvarables, constvarables))]
-  newdataset <- na.omit(newdataset)
-  
-  return(newdataset)
+
+    # Finding variables with a least x missing data
+    missingvarables <- navariables(dataset, x)
+
+    # Constant variables
+    constvarables <- constvar(dataset)
+
+    newdataset <- dataset[, !colnames(dataset) %in% unique(c(dummyvar, missingvarables, constvarables))]
+    newdataset <- na.omit(newdataset)
+
+    # Constant variables again
+    constvarables <- constvar(newdataset)
+
+    newdataset2 <- newdataset[, !colnames(newdataset) %in% unique(constvarables)]
+
+    return(newdataset2)
 }
 
 
