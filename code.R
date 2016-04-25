@@ -98,12 +98,12 @@ model2
 #### Question 3 ####
 
 # Cleveland data
-ex3datcle <- removenaandconstvar(datb1, .8)
+ex3datcle <- removenaandconstvar(datb1, .9)
 
 ex3modcle <- lm(num ~ ., data = ex3datcle)
 
-
 vif(ex3modcle)
+
 ex3pcacle <- princomp(ex3datcle[,!colnames(ex3datcle) %in% "num"], cor=TRUE)
 summary(ex3pcacle, loadings = TRUE)
 
@@ -112,5 +112,14 @@ summary(ex3moecle)
 
 ex3mofcle <- lm(ex3datcle[,"num"] ~ ex3pcacle$scores)
 summary(ex3mofcle)
+
+# Hungarian data
+ex3dathun <- removenaandconstvar(datb2, .79)
+
+# Longbeachva
+ex3datlon <- removenaandconstvar(datb3, .50)
+
+# Swi data
+ex3datswi <- removenaandconstvar(datb4, .13)
 
 #### Question 4 ####
