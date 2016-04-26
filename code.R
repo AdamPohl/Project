@@ -108,7 +108,7 @@ ex3pcacle <- princomp(ex3datcle[,!colnames(ex3datcle) %in% "num"], cor=TRUE)
 summary(ex3pcacle, loadings = TRUE)
 
 plot(ex3pcacle$sd, type="l", xlab = "Component Number",
-     ylab = "Eigenvalues", main = "Scree plot")
+     ylab = "Eigenvalues", main = "Scree plot - Cleveland")
 
 # We need 21 principle components to maintain 80% of the variance
 ex3moecle <- lm(ex3datcle[,"num"] ~ ex3pcacle$scores[,1:21])
@@ -129,7 +129,7 @@ ex3pcahun <- princomp(ex3dathun[,!colnames(ex3dathun) %in% "num"], cor=TRUE)
 summary(ex3pcahun, loadings = TRUE)
 
 plot(ex3pcahun$sd, type="l", xlab = "Component Number",
-     ylab = "Eigenvalues", main = "Scree plot")
+     ylab = "Eigenvalues", main = "Scree plot - Hungary")
 
 # We need 13 principle components to maintain 80% of the variance
 ex3moehun <- lm(ex3dathun[,"num"] ~ ex3pcahun$score[,1:13])
@@ -147,14 +147,14 @@ ex3pcalon <- princomp(ex3datlon[,!colnames(ex3datlon) %in% "num"], cor=TRUE)
 summary(ex3pcalon, loadings = TRUE)
 
 plot(ex3pcalon$sd, type="l", xlab = "Component Number",
-     ylab = "Eigenvalues", main = "Scree plot")
+     ylab = "Eigenvalues", main = "Scree plot - Longbeach")
 
 # We need 21 principle components to maintain 80% of the variance
 ex3moelon <- lm(ex3datlon[,"num"] ~ ex3pcalon$score[,1:21])
 
 ex3moflon <- lm(ex3datlon[,"num"] ~ ex3pcalon$scores)
 
-## Swi data
+## Switzerland data
 ex3datswi <- removenaandconstvar(datb4, .13)
 
 ex3modswi <- lm(num ~ ., data = ex3datswi)
@@ -165,7 +165,7 @@ ex3pcaswi <- princomp(ex3datswi[,!colnames(ex3datswi) %in% "num"], cor=TRUE)
 summary(ex3pcaswi, loadings = TRUE)
 
 plot(ex3pcaswi$sd, type="l", xlab = "Component Number",
-     ylab = "Eigenvalues", main = "Scree plot")
+     ylab = "Eigenvalues", main = "Scree plot - Switzerland")
 
 # We need 16 principle components to maintain 80% of the variance
 ex3moeswi <- lm(ex3datswi[,"num"] ~ ex3pcaswi$score[,1:16])
