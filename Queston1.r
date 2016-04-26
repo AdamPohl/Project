@@ -169,22 +169,4 @@ james(proto3[, 2:9], proto5[, 2:9], R=2)
 james(proto4[, 2:9], proto5[, 2:9], R=2)
 
 
-### R=3
-par(mfrow=c(3, 3))
-james(proto1[, 2:9], proto2[, 2:9], R=3)
-james(proto1[, 2:9], proto3[, 2:9], R=3)
-james(proto1[, 2:9], proto4[, 2:9], R=3)
-james(proto1[, 2:9], proto5[, 2:9], R=3)
-
-james(proto2[, 2:9], proto3[, 2:9], R=3)
-dev.new()
-par(mfrow=c(3, 3))
-
-james(proto2[, 2:9], proto4[, 2:9], R=3)
-james(proto2[, 2:9], proto5[, 2:9], R=3)
-
-james(proto3[, 2:9], proto4[, 2:9], R=3)
-james(proto3[, 2:9], proto5[, 2:9], R=3)
-
-james(proto4[, 2:9], proto5[, 2:9], R=3)
 
