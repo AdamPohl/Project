@@ -1,0 +1,10 @@
+      age       sex   painloc  painexer   relrest        cp  trestbps   restecg
+ 2.369562  1.738028  3.014841  5.301607  5.348634  5.703978  3.512376  2.391685
+    ekgmo    ekgday     ekgyr       dig      prop      nitr       pro  diuretic
+15.412883  4.698930 11.069307  1.660195  2.140460  2.363016  2.250616  1.810968
+  thaldur   thalach  thalrest  tpeakbps  tpeakbpd  trestbpd     exang     xhypo
+ 4.680438  4.923162  3.031050  4.382267  2.124042  2.928830  1.982196  2.170784
+  oldpeak       cmo      cday       cyr       lmt   ladprox   laddist      diag
+ 2.282318 17.422769  4.254917  6.008334  1.696866  2.296964  1.815151  1.777471
+   cxmain     ramus       om1       om2   rcaprox   rcadist
+ 2.269139  2.183169  2.849526  1.660434  1.868517  1.905493

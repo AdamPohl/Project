@@ -1,0 +1,14 @@
+      age       sex   painloc  painexer   relrest        cp  trestbps       htn
+ 3.228090  1.931427  2.577184  7.718893  6.621863 14.044802  3.617851  2.921354
+     chol     smoke      cigs     years       fbs   famhist   restecg     ekgmo
+ 2.045184  4.098390  3.361309  4.794619  3.248168  2.369061  2.192354  3.658305
+   ekgday     ekgyr       dig      prop      nitr       pro  diuretic     proto
+ 2.449554 39.950248  2.509731  2.528256  1.901292  1.732049  2.476101  4.533802
+  thaldur       met   thalach  thalrest  tpeakbps  tpeakbpd  trestbpd     exang
+18.058001 16.434757  3.931213  2.659439  3.784661  2.735284  3.161172  2.222555
+    xhypo   oldpeak     rldv5    rldv5e       cmo      cday       cyr       lmt
+ 2.096734  4.015243  7.661567  6.930116  4.934749  2.272059 43.093455  1.678378
+  ladprox   laddist      diag    cxmain     ramus       om1       om2   rcaprox
+ 2.126046  1.837113  1.766507  1.847673  2.269851  2.527439  2.913807  2.246981
+  rcadist
+ 2.142703
