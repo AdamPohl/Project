@@ -107,7 +107,7 @@ ex3modcle <- lm(num ~ ., data = ex3datcle)
 
 ex3pcacle <- princomp(ex3datcle[,!colnames(ex3datcle) %in% "num"], cor=TRUE)
 
-summary(ex3pcacle, loadings = TRUE)
+# summary(ex3pcacle, loadings = TRUE)
 
 plot(ex3pcacle$sd, type="l", xlab = "Component Number",
      ylab = "Eigenvalues", main = "Scree plot - Cleveland")
@@ -129,7 +129,7 @@ ex3modhun <- lm(num ~ ., data = ex3dathun)
 
 ex3pcahun <- princomp(ex3dathun[,!colnames(ex3dathun) %in% "num"], cor=TRUE)
 
-summary(ex3pcahun, loadings = TRUE)
+# summary(ex3pcahun, loadings = TRUE)
 
 plot(ex3pcahun$sd, type="l", xlab = "Component Number",
      ylab = "Eigenvalues", main = "Scree plot - Hungary")
@@ -148,7 +148,7 @@ ex3modlon <- lm(num ~ ., data = ex3datlon)
 
 ex3pcalon <- princomp(ex3datlon[,!colnames(ex3datlon) %in% "num"], cor=TRUE)
 
-summary(ex3pcalon, loadings = TRUE)
+# summary(ex3pcalon, loadings = TRUE)
 
 plot(ex3pcalon$sd, type="l", xlab = "Component Number",
      ylab = "Eigenvalues", main = "Scree plot - Longbeach")
@@ -167,12 +167,12 @@ ex3modswi <- lm(num ~ ., data = ex3datswi)
 
 ex3pcaswi <- princomp(ex3datswi[,!colnames(ex3datswi) %in% "num"], cor=TRUE)
 
-summary(ex3pcaswi, loadings = TRUE)
+# summary(ex3pcaswi, loadings = TRUE)
 
 plot(ex3pcaswi$sd, type="l", xlab = "Component Number",
      ylab = "Eigenvalues", main = "Scree plot - Switzerland")
 
-     
+
 # We need 16 principle components to maintain 80% of the variance
 ex3moeswi <- lm(ex3datswi[,"num"] ~ ex3pcaswi$score[,1:16])
 
@@ -181,16 +181,33 @@ ex3mofswi <- lm(ex3datswi[,"num"] ~ ex3pcaswi$scores)
 #### Question 4 ####
 library(MASS)
 
-clevdata <- subset(ex3datcle, select= c(-lmt))
+## Clevland model ##
+clevdata <- subset(ex3datcle, select = c(-lmt))
 clevmod <- lda(num ~ ., data = clevdata)
 # clevmod
+clevmod2 <- predict(clevmod)
+ldahist(data=clevmod2$x[,1], g=clevdata$num)
+plot(clevmod2$x[, 1], clevmod2$x[, 2], col = clevdata$num, main = "scatterplot for Clevland model")
 
+
+## Hungary model ##
 hungmod <- lda(num ~ ., data = ex3dathun)
 # hungmod
+hungmod2 <- predict(clevmod)
+ldahist(data=hungmod2$x[,1], g=ex3dathun$num)
+plot(hungmod2$x[, 1], hungmod2$x[, 2], col = ex3dathun$num, main = "scatterplot for Hungary model")
 
+## Longbeach model ##
 longmod <- lda(num ~ ., data = ex3datlon)
 # longmod
+longmod2 <- predict(clevmod)
+ldahist(data=longmod2$x[,1], g=ex3datlon$num)
+plot(longmod2$x[, 1], longmod2$x[, 2], col = ex3datlon$num, main = "scatterplot for Longbeach model")
 
+## Switzerland model ##
 swidata <- subset(ex3datswi, select= c(-lmt))
 switmod <- lda(num ~ ., data = swidata)
 # switmod
+switmod2 <- predict(switmod)
+ldahist(data=switmod2$x[,1], g=swidata$num)
+plot(switmod2$x[, 1], switmod2$x[, 2], col = swidata$num, main = "scatterplot for Switzerland model")
