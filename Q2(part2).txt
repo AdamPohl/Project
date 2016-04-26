@@ -1,0 +1,345 @@
+Response chol :
+Call:
+lm(formula = chol ~ proto + restecg + dig + prop + nitr + pro + 
+    diuretic, data = datall)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-221.153  -37.934   -0.852   55.190  310.650
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 218.1866    16.6717  13.087  < 2e-16 ***
+proto         0.5933     0.1884   3.149  0.00207 **
+restecg     -19.6467    15.5463  -1.264  0.20877
+dig           6.0327    42.3211   0.143  0.88689
+prop         17.9968    25.2562   0.713  0.47750
+nitr        -13.8953    24.8506  -0.559  0.57710
+pro         -68.7201    27.9126  -2.462  0.01524 *
+diuretic    -49.1356    33.0596  -1.486  0.13983
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 85.12 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.2402,	Adjusted R-squared:  0.1958
+F-statistic: 5.418 on 7 and 120 DF,  p-value: 2.026e-05
+
+
+Response thaldur :
+Call:
+lm(formula = thaldur ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+   Min     1Q Median     3Q    Max
+-4.312 -1.681 -0.310  1.422  6.440
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  2.964440   0.443361   6.686 7.65e-10 ***
+proto        0.076214   0.005011  15.209  < 2e-16 ***
+restecg      0.150581   0.413433   0.364   0.7163
+dig          3.129630   1.125473   2.781   0.0063 **
+prop         0.373380   0.671654   0.556   0.5793
+nitr        -0.358181   0.660868  -0.542   0.5888
+pro          1.141536   0.742300   1.538   0.1267
+diuretic     1.516199   0.879177   1.725   0.0872 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.264 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.6909,	Adjusted R-squared:  0.6728
+F-statistic: 38.31 on 7 and 120 DF,  p-value: < 2.2e-16
+
+
+Response thaltime :
+
+Call:
+lm(formula = thaltime ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+   Min     1Q Median     3Q    Max
+-4.469 -1.639 -0.139  1.053  7.352
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  1.941466   0.449229   4.322 3.21e-05 ***
+proto        0.073951   0.005077  14.565  < 2e-16 ***
+restecg      0.432490   0.418906   1.032   0.3039
+dig          2.888715   1.140370   2.533   0.0126 *
+prop         0.678710   0.680544   0.997   0.3206
+nitr        -0.390289   0.669615  -0.583   0.5611
+pro          0.958162   0.752125   1.274   0.2051
+diuretic     0.673187   0.890814   0.756   0.4513
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.294 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.6704,	Adjusted R-squared:  0.6511
+F-statistic: 34.86 on 7 and 120 DF,  p-value: < 2.2e-16
+
+
+Response met :
+Call:
+lm(formula = met ~ proto + restecg + dig + prop + nitr + pro +
+    diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-3.7325 -1.0919 -0.1298  0.8792  5.8206
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 4.166578   0.336945  12.366   <2e-16 ***
+proto       0.012843   0.003808   3.372   0.0010 **
+restecg     0.130481   0.314201   0.415   0.6787
+dig         1.518904   0.855338   1.776   0.0783 .
+prop        0.048745   0.510444   0.095   0.9241
+nitr        0.034160   0.502247   0.068   0.9459
+pro         0.463725   0.564133   0.822   0.4127
+diuretic    0.374352   0.668158   0.560   0.5763
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.72 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1108,	Adjusted R-squared:  0.05892
+F-statistic: 2.136 on 7 and 120 DF,  p-value: 0.04484
+
+
+Response thalach :
+
+Call:
+lm(formula = thalach ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-42.497 -10.060  -0.925  13.735  53.075
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 121.6141     3.6895  32.962  < 2e-16 ***
+proto         0.1241     0.0417   2.977  0.00352 **
+restecg      -0.2202     3.4405  -0.064  0.94908
+dig          -8.2489     9.3659  -0.881  0.38022
+prop         -6.7587     5.5893  -1.209  0.22896
+nitr         -5.9491     5.4996  -1.082  0.28154
+pro           0.0199     6.1772   0.003  0.99743
+diuretic     16.0994     7.3163   2.200  0.02969 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18.84 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1867,	Adjusted R-squared:  0.1392
+F-statistic: 3.934 on 7 and 120 DF,  p-value: 0.0006723
+
+
+Response thalrest :
+
+Call:
+lm(formula = thalrest ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-28.204  -8.542  -1.909   8.172  55.796
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 74.75201    2.60040  28.746   <2e-16 ***
+proto        0.04602    0.02939   1.566    0.120
+restecg      1.48140    2.42487   0.611    0.542
+dig          2.17533    6.60112   0.330    0.742
+prop        -0.26923    3.93939  -0.068    0.946
+nitr        -8.67576    3.87612  -2.238    0.027 *
+pro          2.95844    4.35374   0.680    0.498
+diuretic    -0.83465    5.15655  -0.162    0.872
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 13.28 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.09876,	Adjusted R-squared:  0.04619
+F-statistic: 1.879 on 7 and 120 DF,  p-value: 0.07885
+
+
+Response tpeakbps :
+
+Call:
+lm(formula = tpeakbps ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+   Min     1Q Median     3Q    Max
+-46.56 -15.18  -2.97  13.36  58.73
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) 160.70295    4.33227  37.094  < 2e-16 ***
+proto         0.21138    0.04897   4.317 3.27e-05 ***
+restecg       3.76224    4.03984   0.931    0.354
+dig          -7.98425   10.99749  -0.726    0.469
+prop          0.05788    6.56303   0.009    0.993
+nitr         -9.09857    6.45763  -1.409    0.161
+pro           4.85054    7.25334   0.669    0.505
+diuretic      6.60213    8.59083   0.769    0.444
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22.12 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1992,	Adjusted R-squared:  0.1525
+F-statistic: 4.266 on 7 and 120 DF,  p-value: 0.0003059
+
+
+Response tpeakbpd :
+
+Call:
+lm(formula = tpeakbpd ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-60.687  -7.517  -0.023   8.638  36.329
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  93.26322    2.68207  34.773  < 2e-16 ***
+proto         0.03306    0.03031   1.091  0.27768
+restecg      -1.24519    2.50103  -0.498  0.61948
+dig         -18.54131    6.80844  -2.723  0.00743 **
+prop         -1.98759    4.06311  -0.489  0.62561
+nitr         -3.69032    3.99786  -0.923  0.35782
+pro           7.01102    4.49047   1.561  0.12108
+diuretic      2.15344    5.31850   0.405  0.68627
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 13.69 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1321,	Adjusted R-squared:  0.0815
+F-statistic:  2.61 on 7 and 120 DF,  p-value: 0.01525
+
+
+Response trestbpd :
+Call:
+lm(formula = trestbpd ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-35.510  -6.141  -1.298   5.543  24.175
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 84.87854    1.88379  45.057   <2e-16 ***
+proto        0.01262    0.02129   0.593    0.554
+restecg      1.15852    1.75663   0.660    0.511
+dig         -4.94866    4.78200  -1.035    0.303
+prop         0.51233    2.85378   0.180    0.858
+nitr        -3.27042    2.80795  -1.165    0.246
+pro          0.29623    3.15394   0.094    0.925
+diuretic     1.11644    3.73552   0.299    0.766
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.618 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.0366,	Adjusted R-squared:  -0.01959
+F-statistic: 0.6514 on 7 and 120 DF,  p-value: 0.7126
+
+
+Response oldpeak :
+
+Call:
+lm(formula = oldpeak ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-1.9343 -0.6280 -0.0506  0.3642  3.5801
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  1.937386   0.169250  11.447  < 2e-16 ***
+proto       -0.003094   0.001913  -1.617  0.10841
+restecg     -0.208133   0.157825  -1.319  0.18976
+dig          0.420187   0.429642   0.978  0.33004
+prop        -0.016737   0.256399  -0.065  0.94806
+nitr         0.262057   0.252282   1.039  0.30101
+pro         -0.812187   0.283368  -2.866  0.00491 **
+diuretic    -0.024390   0.335620  -0.073  0.94219
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8642 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1081,	Adjusted R-squared:  0.05603
+F-statistic: 2.077 on 7 and 120 DF,  p-value: 0.0511
+
+
+Response rldv5 :
+
+Call:
+lm(formula = rldv5 ~ proto + restecg + dig + prop + nitr + pro +
+    diuretic, data = datall)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-10.7927  -3.3161  -0.7927   3.0914  16.1580
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept) 14.8748145  1.0543301  14.108   <2e-16 ***
+proto       -0.0006571  0.0119165  -0.055    0.956
+restecg      0.1703404  0.9831619   0.173    0.863
+dig         -2.1530704  2.6764216  -0.804    0.423
+prop         1.2718279  1.5972216   0.796    0.427
+nitr         0.6342939  1.5715709   0.404    0.687
+pro         -1.5831511  1.7652196  -0.897    0.372
+diuretic    -0.1302669  2.0907202  -0.062    0.950
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.383 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.016,	Adjusted R-squared:  -0.0414
+F-statistic: 0.2787 on 7 and 120 DF,  p-value: 0.9612
+
+
+Response rldv5e :
+
+Call:
+lm(formula = rldv5e ~ proto + restecg + dig + prop + nitr + pro +
+    diuretic, data = datall)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-11.1533  -3.5409  -0.4798   2.7664  14.0371
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) 14.969428   1.048021  14.284   <2e-16 ***
+proto       -0.006529   0.011845  -0.551    0.583
+restecg      0.220336   0.977279   0.225    0.822
+dig         -2.219224   2.660406  -0.834    0.406
+prop         1.174742   1.587664   0.740    0.461
+nitr        -0.604272   1.562167  -0.387    0.700
+pro          0.779970   1.754657   0.445    0.657
+diuretic     3.238914   2.078210   1.559    0.122
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.351 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.03959,	Adjusted R-squared:  -0.01643
+F-statistic: 0.7067 on 7 and 120 DF,  p-value: 0.6663
+
+
+[Finished in 3.17s]
