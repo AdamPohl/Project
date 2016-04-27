@@ -1,0 +1,27 @@
+Response rldv5e :
+
+Call:
+lm(formula = rldv5e ~ proto + restecg + dig + prop + nitr + pro +
+    diuretic, data = datall)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-11.1533  -3.5409  -0.4798   2.7664  14.0371
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) 14.969428   1.048021  14.284   <2e-16 ***
+proto       -0.006529   0.011845  -0.551    0.583
+restecg      0.220336   0.977279   0.225    0.822
+dig         -2.219224   2.660406  -0.834    0.406
+prop         1.174742   1.587664   0.740    0.461
+nitr        -0.604272   1.562167  -0.387    0.700
+pro          0.779970   1.754657   0.445    0.657
+diuretic     3.238914   2.078210   1.559    0.122
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.351 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.03959,	Adjusted R-squared:  -0.01643
+F-statistic: 0.7067 on 7 and 120 DF,  p-value: 0.6663

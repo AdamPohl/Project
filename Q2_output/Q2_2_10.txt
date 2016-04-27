@@ -1,0 +1,27 @@
+Response oldpeak :
+
+Call:
+lm(formula = oldpeak ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-1.9343 -0.6280 -0.0506  0.3642  3.5801
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  1.937386   0.169250  11.447  < 2e-16 ***
+proto       -0.003094   0.001913  -1.617  0.10841
+restecg     -0.208133   0.157825  -1.319  0.18976
+dig          0.420187   0.429642   0.978  0.33004
+prop        -0.016737   0.256399  -0.065  0.94806
+nitr         0.262057   0.252282   1.039  0.30101
+pro         -0.812187   0.283368  -2.866  0.00491 **
+diuretic    -0.024390   0.335620  -0.073  0.94219
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8642 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1081,	Adjusted R-squared:  0.05603
+F-statistic: 2.077 on 7 and 120 DF,  p-value: 0.0511

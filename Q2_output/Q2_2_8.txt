@@ -1,0 +1,27 @@
+Response tpeakbpd :
+
+Call:
+lm(formula = tpeakbpd ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-60.687  -7.517  -0.023   8.638  36.329
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  93.26322    2.68207  34.773  < 2e-16 ***
+proto         0.03306    0.03031   1.091  0.27768
+restecg      -1.24519    2.50103  -0.498  0.61948
+dig         -18.54131    6.80844  -2.723  0.00743 **
+prop         -1.98759    4.06311  -0.489  0.62561
+nitr         -3.69032    3.99786  -0.923  0.35782
+pro           7.01102    4.49047   1.561  0.12108
+diuretic      2.15344    5.31850   0.405  0.68627
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 13.69 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1321,	Adjusted R-squared:  0.0815
+F-statistic:  2.61 on 7 and 120 DF,  p-value: 0.01525

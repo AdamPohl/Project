@@ -1,0 +1,27 @@
+Response thaltime :
+
+Call:
+lm(formula = thaltime ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+   Min     1Q Median     3Q    Max
+-4.469 -1.639 -0.139  1.053  7.352
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  1.941466   0.449229   4.322 3.21e-05 ***
+proto        0.073951   0.005077  14.565  < 2e-16 ***
+restecg      0.432490   0.418906   1.032   0.3039
+dig          2.888715   1.140370   2.533   0.0126 *
+prop         0.678710   0.680544   0.997   0.3206
+nitr        -0.390289   0.669615  -0.583   0.5611
+pro          0.958162   0.752125   1.274   0.2051
+diuretic     0.673187   0.890814   0.756   0.4513
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.294 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.6704,	Adjusted R-squared:  0.6511
+F-statistic: 34.86 on 7 and 120 DF,  p-value: < 2.2e-16

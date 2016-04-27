@@ -7,7 +7,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{listings}
-\usepackage{epsf} 
+\usepackage{epsf}
 \usepackage{float}
 
 \title{MA3505 Multivariate Statistics Project 1}
@@ -27,6 +27,135 @@
 
 \subsection{Question 2}
 
+\begin{lstlisting}[frame=single]
+model2 = lm(cbind(chol, thaldur, thaltime, met, thalach, thalrest, tpeakbps,
+		tpeakbpd, trestbpd, oldpeak, rldv5, rldv5e) ~ proto + restecg + dig
+		+ prop + nitr + pro + diuretic, data=datall)
+\end{lstlisting}
+
+Using the above code I created the nessarcery multivariate regression model.
+I was able to use this model to get the following table of coefficients:
+\lstinputlisting[frame=single]{Q2_output/Q2_1.txt}
+However this is not very useful, so I used the \textbf{summary()} function to
+enable me to achieve a more detailed view of my analysis.  Below I have tried
+my best to explain the detailed view for each response variable.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_1.txt}
+From the table above we can see that the predictor that had the most
+affect in the value of the \textbf{chol} reponse was \textbf{proto}. As
+\textit{chol} refers to the amount of cholestoral in a person's system and
+\textit{proto} refers to the type of exercise that they do, it is not a major
+surprise that this is the most importent as in theory the higher the intensity
+of the your exercise program the lower your chloestrol will be. The secound most
+importent variable is \textbf{pro}; this is an indicator variable that tells us
+if someone uses \textit{calcium channel blocker used during exercise} (it is
+used in cholesteryl ester hydrolysis which helps reduce cholestrol) during
+their exercise routine.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_2.txt}
+The predictor variable in this instance is \textbf{thaldur} which represents the
+length of time a person spends on an exercise test, it is therefore no surprise
+that \textbf{proto} is the most importent predictor as the harder the exercise
+test the less time you will be able to do it for. The second most significant
+predictor \textbf{dig} refers to whether or not the person is taking a drug
+called \textit{digitails} during exercise. Studies have shown that theuse if
+this drug during exercise increases blood flow which could allow someone to
+exercise for longer \textit{(experts are not sure if it is a performance
+enhancing drug as trial results vary)}.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_3.txt}
+\textbf{thaltime} refers to the time at which a person's ST depression was
+measured. It is therefore no supprise that \textbf{proto} has the highest effect
+as different exercises will take different amount of times to complete meaning
+that if \textit{thaltime} is always measured at the end of the exercise test
+people who do different tests will have different times but those who take the
+same test should have very similar times.  \textbf{dig} is the next significant
+variable which sort of makes sense as you most likley have to wait for the drug
+to leave your system before your ST depression can be measured.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_4.txt}
+The predictor \textbf{met} refers to the \textit{metabolic equivalent of resting
+oxygen consumption while sitting} and therefore it is not much of a surprise
+that the response \textbf{proto} is the most significant. It is also not that
+surprising that it is as significant as before, as the trial that produced these
+results most likely used people of varing athaletic abilities for each test
+inorder to make the results more accurate.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_5.txt}
+The predictor \textbf{thalach} refers to the maximum heart rate that a person
+achives during their exercise test and as such it is no surprise that the
+response variable that is the most signicant when calculating it is
+\textbf{proto}. This is because the more intense the exercise test is the more
+oxygen your body is going to need thus you will have a higher heart rate. Again
+it is not surprissing that \textit{proto} is only a 2* rather than a 3*
+signifcance level as your maximum heart rate will depend on how athletic you
+are, the more atheletic the lower your max heart rate will be. \textbf{diuretic}
+is the other significant response variable and it refers to whether or not the
+subiect uses diuretic used used during exercise. Diuretic is considered to be a
+performance enhancing drug so it is therefore no surprise that it only has a 1*
+signicance level due to the fact that the analysis up to now has shown that
+there is a high probability that atheletes are involved in this trial and would
+be band by WADA if they were caught using it.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_6.txt}
+The \textbf{thalrest} variable refers to the subjects resting heart rate and the
+only variable that has any significant effect on the outcome of this result is
+\textbf{nitr} which tells us whether or not the subject uses nitrates used
+during their exercise. I am not quite sure what the use of nitrates has to do
+with the resting heart rates but I do know that they are added to `unhealthy
+foods` such as \textit{bacon, sandich meats and salami} which could indercate
+that they are not very atheletic but a high resting heart does not mean that
+someone is less athletic.
+
+\newpage
+In this trial the subjects the measuring of their peak blood pressure was split
+into two different variables: \textbf{tpeakbps} and \textbf{tpeakbpd}, google
+wasn't able to explain why this is the case.
+\lstinputlisting[frame=single]{Q2_output/Q2_2_7.txt}
+For the variable that had the most significant affect on \textbf{tpeakbps} was
+(as normal it seems in this trial) \textbf{proto}. This is most likely because
+of the fact that exercise can lower your blood pressure and therefore the
+subjects that are able to take the more intensive exercise tests were likely to
+have a lower peak blood pressure.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_8.txt}
+The response variable that was most significant when working out the predictor
+\textbf{tpeakbpd} was \textbf{dig}.  This makes sense as studies have shown that
+the use of the drug digitails during exercise lowers a person's blood pressure.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_9.txt}
+The predictor variable \textbf{trestbpd} refers to the subjects resting blood
+pressure. As this must be taken before any exercise is started it makes sense
+that none of the responses are significant in determining what this value shall
+be due to them being manly related to the exercise test the subject takes.
+
+\newpage
+\lstinputlisting[frame=single]{Q2_output/Q2_2_10.txt}
+The predictor variable \textbf{oldpeak} refers to \textit{ST depression induced
+by exercise relative to rest} (which I understand from google to be a fancy way
+of saying that the subject gets a small heart attack during exercise). It makes
+sense then that the most significant variable in deciding what the value of
+which if it is high can cause heart attacks.
+\textit{oldpeak} is going to be is \textbf{pro} as helps to lower cholestrol
+
+\newpage
+The next two predictors, \textbf{rldv5} and \textbf{rldv5e}, refer to
+\textit{height at rest} and \textit{height at peak exercise}. I don't know what
+\textit{height} they are refering to (I am assuming it is not just how tall they
+are as that would be dull to measure at rest and during peak exercise as it
+would not change) and luckly none of the response variables are significant in
+working out what the values of the variables will be.
+\lstinputlisting[frame=single]{Q2_output/Q2_2_11.txt}
+\lstinputlisting[frame=single]{Q2_output/Q2_2_12.txt}
+
 
 \subsection{Question 3}
 
@@ -36,12 +165,12 @@ From running variance inflation factor we get the following
 
 \lstinputlisting[frame=single]{question3output/clevif.txt}
 
-Here we see the variables, ekgmo, ekgyr, cmo and cyr are collinear with other variables in the model. 
+Here we see the variables, ekgmo, ekgyr, cmo and cyr are collinear with other variables in the model.
 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{question3output/clescreeplot.eps} 
+		\includegraphics[width=12cm]{question3output/clescreeplot.eps}
 	\end{center}
 	\caption{Scree plot for PCA of Cleveland}
 	\label{q3-cle-screeplot}
@@ -49,7 +178,7 @@ Here we see the variables, ekgmo, ekgyr, cmo and cyr are collinear with other va
 
 From the scree plot in Figure \ref{q3-cle-screeplot} we see that we keep 6 components.
 
-We have the loadings of each components as follows. 
+We have the loadings of each components as follows.
 
 \lstinputlisting[frame=single]{question3output/clepcaloadings.txt}
 
@@ -57,7 +186,7 @@ We have the loadings of each components as follows.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{question3output/hunscreeplot.eps} 
+		\includegraphics[width=12cm]{question3output/hunscreeplot.eps}
 	\end{center}
 	\caption{Scree plot for PCA of Hungary}
 	\label{q3-hun-screeplot}
@@ -65,7 +194,7 @@ We have the loadings of each components as follows.
 
 From the scree plot in Figure \ref{q3-hun-screeplot} we see that we keep 6 components.
 
-We have the loadings of each components as follows. 
+We have the loadings of each components as follows.
 
 \lstinputlisting[frame=single]{question3output/hunpcaloadings.txt}
 
@@ -73,7 +202,7 @@ We have the loadings of each components as follows.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{question3output/lonscreeplot.eps} 
+		\includegraphics[width=12cm]{question3output/lonscreeplot.eps}
 	\end{center}
 	\caption{Scree plot for PCA of Longbeach}
 	\label{q3-lon-screeplot}
@@ -81,7 +210,7 @@ We have the loadings of each components as follows.
 
 From the scree plot in Figure \ref{q3-lon-screeplot} we see that we keep 11 components.
 
-We have the loadings of each components as follows. 
+We have the loadings of each components as follows.
 
 \lstinputlisting[frame=single]{question3output/lonpcaloadings.txt}
 
@@ -89,7 +218,7 @@ We have the loadings of each components as follows.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{question3output/swiscreeplot.eps} 
+		\includegraphics[width=12cm]{question3output/swiscreeplot.eps}
 	\end{center}
 	\caption{Scree plot for PCA of Switzerland}
 	\label{q3-swi-screeplot}
@@ -97,12 +226,19 @@ We have the loadings of each components as follows.
 
 From the scree plot in Figure \ref{q3-swi-screeplot} we see that we keep 5 components.
 
-We have the loadings of each components as follows. 
+We have the loadings of each components as follows.
 
 \lstinputlisting[frame=single]{question3output/swipcaloadings.txt}
 
 \subsection{Question 4}
 
+\subsubsection{Cleveland}
+
+\subsubsection{Hungary}
+
+\subsubsection{Longbeach}
+
+\subsubsection{Switzerland}
 \section{Summary}
 
 \end{document}

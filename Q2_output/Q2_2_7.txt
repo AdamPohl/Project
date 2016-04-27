@@ -1,0 +1,27 @@
+Response tpeakbps :
+
+Call:
+lm(formula = tpeakbps ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+   Min     1Q Median     3Q    Max
+-46.56 -15.18  -2.97  13.36  58.73
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) 160.70295    4.33227  37.094  < 2e-16 ***
+proto         0.21138    0.04897   4.317 3.27e-05 ***
+restecg       3.76224    4.03984   0.931    0.354
+dig          -7.98425   10.99749  -0.726    0.469
+prop          0.05788    6.56303   0.009    0.993
+nitr         -9.09857    6.45763  -1.409    0.161
+pro           4.85054    7.25334   0.669    0.505
+diuretic      6.60213    8.59083   0.769    0.444
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22.12 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1992,	Adjusted R-squared:  0.1525
+F-statistic: 4.266 on 7 and 120 DF,  p-value: 0.0003059

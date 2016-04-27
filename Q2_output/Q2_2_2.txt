@@ -1,0 +1,26 @@
+Response thaldur :
+Call:
+lm(formula = thaldur ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+   Min     1Q Median     3Q    Max
+-4.312 -1.681 -0.310  1.422  6.440
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept)  2.964440   0.443361   6.686 7.65e-10 ***
+proto        0.076214   0.005011  15.209  < 2e-16 ***
+restecg      0.150581   0.413433   0.364   0.7163
+dig          3.129630   1.125473   2.781   0.0063 **
+prop         0.373380   0.671654   0.556   0.5793
+nitr        -0.358181   0.660868  -0.542   0.5888
+pro          1.141536   0.742300   1.538   0.1267
+diuretic     1.516199   0.879177   1.725   0.0872 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.264 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.6909,	Adjusted R-squared:  0.6728
+F-statistic: 38.31 on 7 and 120 DF,  p-value: < 2.2e-16

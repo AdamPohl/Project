@@ -1,0 +1,26 @@
+Response trestbpd :
+Call:
+lm(formula = trestbpd ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-35.510  -6.141  -1.298   5.543  24.175
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 84.87854    1.88379  45.057   <2e-16 ***
+proto        0.01262    0.02129   0.593    0.554
+restecg      1.15852    1.75663   0.660    0.511
+dig         -4.94866    4.78200  -1.035    0.303
+prop         0.51233    2.85378   0.180    0.858
+nitr        -3.27042    2.80795  -1.165    0.246
+pro          0.29623    3.15394   0.094    0.925
+diuretic     1.11644    3.73552   0.299    0.766
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.618 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.0366,	Adjusted R-squared:  -0.01959
+F-statistic: 0.6514 on 7 and 120 DF,  p-value: 0.7126

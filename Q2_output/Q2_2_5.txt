@@ -1,0 +1,27 @@
+Response thalach :
+
+Call:
+lm(formula = thalach ~ proto + restecg + dig + prop + nitr +
+    pro + diuretic, data = datall)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-42.497 -10.060  -0.925  13.735  53.075
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 121.6141     3.6895  32.962  < 2e-16 ***
+proto         0.1241     0.0417   2.977  0.00352 **
+restecg      -0.2202     3.4405  -0.064  0.94908
+dig          -8.2489     9.3659  -0.881  0.38022
+prop         -6.7587     5.5893  -1.209  0.22896
+nitr         -5.9491     5.4996  -1.082  0.28154
+pro           0.0199     6.1772   0.003  0.99743
+diuretic     16.0994     7.3163   2.200  0.02969 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18.84 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.1867,	Adjusted R-squared:  0.1392
+F-statistic: 3.934 on 7 and 120 DF,  p-value: 0.0006723

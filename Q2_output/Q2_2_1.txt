@@ -1,0 +1,26 @@
+Response chol :
+Call:
+lm(formula = chol ~ proto + restecg + dig + prop + nitr + pro +
+    diuretic, data = datall)
+
+Residuals:
+     Min       1Q   Median       3Q      Max
+-221.153  -37.934   -0.852   55.190  310.650
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 218.1866    16.6717  13.087  < 2e-16 ***
+proto         0.5933     0.1884   3.149  0.00207 **
+restecg     -19.6467    15.5463  -1.264  0.20877
+dig           6.0327    42.3211   0.143  0.88689
+prop         17.9968    25.2562   0.713  0.47750
+nitr        -13.8953    24.8506  -0.559  0.57710
+pro         -68.7201    27.9126  -2.462  0.01524 *
+diuretic    -49.1356    33.0596  -1.486  0.13983
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 85.12 on 120 degrees of freedom
+  (771 observations deleted due to missingness)
+Multiple R-squared:  0.2402,	Adjusted R-squared:  0.1958
+F-statistic: 5.418 on 7 and 120 DF,  p-value: 2.026e-05
