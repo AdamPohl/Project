@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.12.17)  28 APR 2016 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.12.17)  28 APR 2016 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,12 +419,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: No \author given.
 
+[1
+
+{c:/dev/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 38.
-(./Q2_output/Q2_1.txt) [1
 
-{c:/dev/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Q2_outpu
-t/Q2_2_1.txt
+(./Q2_output/Q2_1.txt) [2] (./Q2_output/Q2_2_1.txt
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 11.
 
 (c:/dev/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
@@ -469,7 +470,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [2]
+) [3]
 (./Q2_output/Q2_2_2.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -501,7 +502,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [3] (./Q2_output/Q2_2_3.txt
+) [4] (./Q2_output/Q2_2_3.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -532,7 +533,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [4]
+) [5]
 (./Q2_output/Q2_2_4.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -564,7 +565,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [5] (./Q2_output/Q2_2_5.txt
+) [6] (./Q2_output/Q2_2_5.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -595,7 +596,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [6]
+) [7]
 (./Q2_output/Q2_2_6.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -627,7 +628,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [7] (./Q2_output/Q2_2_7.txt
+) [8] (./Q2_output/Q2_2_7.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -658,7 +659,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [8]
+) [9]
 (./Q2_output/Q2_2_8.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -690,7 +691,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [9] (./Q2_output/Q2_2_9.txt
+) [10] (./Q2_output/Q2_2_9.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -721,7 +722,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [10]
+) [11]
 (./Q2_output/Q2_2_10.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -753,7 +754,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [11] (./Q2_output/Q2_2_11.txt
+) [12] (./Q2_output/Q2_2_11.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -816,7 +817,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [12] (./question3output/clevif.txt)
+) [13] (./question3output/clevif.txt)
 Package epstopdf Info: Source file: <question3output/clescreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:02:51
 (epstopdf)                    size: 7396 bytes
@@ -829,7 +830,7 @@ ot-eps-converted-to.pdf question3output/clescreeplot.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/clescreeplot-eps-converted-to.pdf, id=490, 433.62pt x 289.08pt
+<question3output/clescreeplot-eps-converted-to.pdf, id=495, 433.62pt x 289.08pt
 >
 File: question3output/clescreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -838,7 +839,7 @@ Package pdftex.def Info: question3output/clescreeplot-eps-converted-to.pdf used
  on input line 176.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
 
-(./question3output/clepcaloadings.txt [13pdfTeX warning (ext4): destination wit
+(./question3output/clepcaloadings.txt [14pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.1}) has been already used, duplicate ignored
 
 
@@ -847,7 +848,7 @@ h the same identifier (name{figure.1}) has been already used, duplicate ignored
 l.5 cp 
               0.208                                            0.384        ...
  <./question3output/clescreeplot-eps-converted-to.pdf>])
-(./question3output/hunvif.txt [14])
+(./question3output/hunvif.txt [15])
 Package epstopdf Info: Source file: <question3output/hunscreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:02:56
 (epstopdf)                    size: 7447 bytes
@@ -860,7 +861,7 @@ ot-eps-converted-to.pdf question3output/hunscreeplot.eps>
 (epstopdf)             \includegraphics on input line 210.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/hunscreeplot-eps-converted-to.pdf, id=574, 433.62pt x 289.08pt
+<question3output/hunscreeplot-eps-converted-to.pdf, id=578, 433.62pt x 289.08pt
 >
 File: question3output/hunscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -869,7 +870,7 @@ Package pdftex.def Info: question3output/hunscreeplot-eps-converted-to.pdf used
  on input line 210.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
 
-(./question3output/hunpcaloadings.txt [15pdfTeX warning (ext4): destination wit
+(./question3output/hunpcaloadings.txt [16pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.2}) has been already used, duplicate ignored
 
 
@@ -891,7 +892,7 @@ ot-eps-converted-to.pdf question3output/lonscreeplot.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/lonscreeplot-eps-converted-to.pdf, id=622, 433.62pt x 289.08pt
+<question3output/lonscreeplot-eps-converted-to.pdf, id=626, 433.62pt x 289.08pt
 >
 File: question3output/lonscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -899,8 +900,8 @@ File: question3output/lonscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: question3output/lonscreeplot-eps-converted-to.pdf used
  on input line 244.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- [16]
-(./question3output/lonpcaloadings.txt [17pdfTeX warning (ext4): destination wit
+ [17]
+(./question3output/lonpcaloadings.txt [18pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.3}) has been already used, duplicate ignored
 
 
@@ -908,7 +909,7 @@ h the same identifier (name{figure.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.35 xhypo 
               -0.128                       0.153 -0.177               -0.148 <.
-/question3output/lonscreeplot-eps-converted-to.pdf>] [18])
+/question3output/lonscreeplot-eps-converted-to.pdf>] [19])
 (./question3output/swivif.txt)
 Package epstopdf Info: Source file: <question3output/swiscreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:03:02
@@ -922,7 +923,7 @@ ot-eps-converted-to.pdf question3output/swiscreeplot.eps>
 (epstopdf)             \includegraphics on input line 288.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/swiscreeplot-eps-converted-to.pdf, id=778, 433.62pt x 289.08pt
+<question3output/swiscreeplot-eps-converted-to.pdf, id=783, 433.62pt x 289.08pt
 >
 File: question3output/swiscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -930,8 +931,8 @@ File: question3output/swiscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: question3output/swiscreeplot-eps-converted-to.pdf used
  on input line 288.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- [19]
-(./question3output/swipcaloadings.txt [20pdfTeX warning (ext4): destination wit
+ [20]
+(./question3output/swipcaloadings.txt [21pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.4}) has been already used, duplicate ignored
 
 
@@ -939,25 +940,133 @@ h the same identifier (name{figure.4}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.35 cxmain 
               -0.102 -0.128               -0.190  0.219        -0.208       ...
- <./question3output/swiscreeplot-eps-converted-to.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
- [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+ <./question3output/swiscreeplot-eps-converted-to.pdf>]) [22]
+(./Q4_output/q4-clev.txt [23])
+<Q4_pics/Clev-Histgram.png, id=928, 474.27188pt x 479.54156pt>
+File: Q4_pics/Clev-Histgram.png Graphic file (type png)
+
+<use Q4_pics/Clev-Histgram.png>
+Package pdftex.def Info: Q4_pics/Clev-Histgram.png used on input line 322.
+(pdftex.def)             Requested size: 341.43306pt x 345.24039pt.
+ [24]
+<Q4_pics/Clev-scatter.png, id=974, 485.56406pt x 487.8225pt>
+File: Q4_pics/Clev-scatter.png Graphic file (type png)
+
+<use Q4_pics/Clev-scatter.png>
+Package pdftex.def Info: Q4_pics/Clev-scatter.png used on input line 330.
+(pdftex.def)             Requested size: 341.43306pt x 343.01424pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.335 
+       <./Q4_pics/Clev-Histgram.png>] [26pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.6}) has been already used, duplicate ignored
+
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.336 \newpage
+               <./Q4_pics/Clev-scatter.png>] (./Q4_output/Q4-hung.txt [27])
+<Q4_pics/Hung-Histgram.png, id=1050, 470.50781pt x 467.49657pt>
+File: Q4_pics/Hung-Histgram.png Graphic file (type png)
+
+<use Q4_pics/Hung-Histgram.png>
+Package pdftex.def Info: Q4_pics/Hung-Histgram.png used on input line 343.
+(pdftex.def)             Requested size: 341.43306pt x 339.2509pt.
+
+<Q4_pics/Hung-scatter.png, id=1051, 484.05844pt x 484.81125pt>
+File: Q4_pics/Hung-scatter.png Graphic file (type png)
+
+<use Q4_pics/Hung-scatter.png>
+Package pdftex.def Info: Q4_pics/Hung-scatter.png used on input line 351.
+(pdftex.def)             Requested size: 341.43306pt x 341.97691pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.356 
+       <./Q4_pics/Hung-Histgram.png>] [29pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.8}) has been already used, duplicate ignored
+
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.357 \newpage
+               <./Q4_pics/Hung-scatter.png>] (./Q4_output/Q4-long.txt [30])
+<Q4_pics/Long-Histgram.png, id=1148, 464.4853pt x 465.99094pt>
+File: Q4_pics/Long-Histgram.png Graphic file (type png)
+
+<use Q4_pics/Long-Histgram.png>
+Package pdftex.def Info: Q4_pics/Long-Histgram.png used on input line 364.
+(pdftex.def)             Requested size: 341.43306pt x 342.54544pt.
+ [31]
+<Q4_pics/Long-scatter.png, id=1198, 478.03593pt x 476.53032pt>
+File: Q4_pics/Long-scatter.png Graphic file (type png)
+
+<use Q4_pics/Long-scatter.png>
+Package pdftex.def Info: Q4_pics/Long-scatter.png used on input line 372.
+(pdftex.def)             Requested size: 341.43306pt x 340.35303pt.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.377 
+       <./Q4_pics/Long-Histgram.png>] [33pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.10}) has been already used, duplicate ignore
+d
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.378 \newpage
+               <./Q4_pics/Long-scatter.png>] (./Q4_output/Q4-swit.txt [34])
+<Q4_pics/Swit-Histgram.png, id=1272, 454.69875pt x 468.24937pt>
+File: Q4_pics/Swit-Histgram.png Graphic file (type png)
+
+<use Q4_pics/Swit-Histgram.png>
+Package pdftex.def Info: Q4_pics/Swit-Histgram.png used on input line 385.
+(pdftex.def)             Requested size: 341.43306pt x 351.61485pt.
+
+<Q4_pics/Swit-scatter.png, id=1273, 478.03593pt x 484.05844pt>
+File: Q4_pics/Swit-scatter.png Graphic file (type png)
+
+<use Q4_pics/Swit-scatter.png>
+Package pdftex.def Info: Q4_pics/Swit-scatter.png used on input line 393.
+(pdftex.def)             Requested size: 341.43306pt x 345.72984pt.
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.398 
+       <./Q4_pics/Swit-Histgram.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.401 \end{document}
+                     <./Q4_pics/Swit-scatter.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 11CEAF1DDA5C7F9B1632347C6A627F6F;1000.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
  ) 
 Here is how much of TeX's memory you used:
- 8509 strings out of 493054
- 124285 string characters out of 6136542
- 325776 words of memory out of 5000000
- 11188 multiletter control sequences out of 15000+600000
+ 8956 strings out of 493054
+ 131633 string characters out of 6136542
+ 326366 words of memory out of 5000000
+ 11228 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,6n,32p,296b,1631s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,6n,32p,292b,1631s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:
 /dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/dev/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/dev/texli
@@ -966,10 +1075,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/dev/texlive/201
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/dev/texlive/2015/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/dev/texlive/2015/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (21 pages, 224414 bytes).
+Output written on report.pdf (36 pages, 412194 bytes).
 PDF statistics:
- 1034 PDF objects out of 1200 (max. 8388607)
- 977 compressed objects within 10 object streams
- 683 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1554 PDF objects out of 1728 (max. 8388607)
+ 1469 compressed objects within 15 object streams
+ 1067 named destinations out of 1200 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
