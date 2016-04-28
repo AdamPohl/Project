@@ -159,14 +159,17 @@ working out what the values of the variables will be.
 
 \subsection{Question 3}
 
+Due to that each dataset is missing different variables from the data, we have decided that in order to maximise the amount of variables we have, we are going to be using each dataset independent of the others. 
+
+For each dataset we removed the dummy variables and variables that were missing at least a percentage of data. This percent was different for each data set and we were aiming for approximate at least double the number of observations to the number of variables. 
+
 \subsubsection{Cleveland}
 
-From running variance inflation factor we get the following
+After removing dummy variables and variables with at least $90\%$ NA data, we are left with 45 variables and 201 observations. 
 
-\lstinputlisting[frame=single]{question3output/clevif.txt}
+\lstinputlisting[frame=single, title={Cleveland variance inflation factor}]{question3output/clevif.txt}
 
-Here we see the variables, ekgmo, ekgyr, cmo and cyr are collinear with other variables in the model.
-
+From the variance inflation factor we see the variables \textbf{ekgmo}, \textbf{ekgyr}, \textbf{cmo} and \textbf{cyr} are highly collinear with other variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -180,9 +183,27 @@ From the scree plot in Figure \ref{q3-cle-screeplot} we see that we keep 6 compo
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single]{question3output/clepcaloadings.txt}
+\lstinputlisting[frame=single, title={Cleveland PCA loadings}]{question3output/clepcaloadings.txt}
+
+We see that the first principle component is mostly formed of \textbf{thaldur}, \textbf{thalach}, \textbf{met} and \textbf{oldpeak} variables.
+
+The second principle component is mostly formed of \textbf{cyr} and \textbf{ekgyr} variables.
+
+The third principle component is mostly formed of \textbf{tpeakbpd}, \textbf{trestbpd}, \textbf{sex} and \textbf{trestbps} variables.
+
+The fourth principle component is mostly formed of \textbf{ekgmo} and \textbf{cmo} variables.
+
+The firth principle component is mostly formed of \textbf{cday}, \textbf{ekgday}, \textbf{years} and \textbf{cigs} variables.
+
+The sixth principle component is mostly formed of \textbf{diuretic}, \textbf{htn}, \textbf{ekgday}
 
 \subsubsection{Hungary}
+
+After removing dummy variables and variables with at least $79\%$ NA data, we are left with 36 variables and 88 observations. 
+
+\lstinputlisting[frame=single, title={Hungary variance inflation factor}]{question3output/hunvif.txt}
+
+From the variance inflation factor we see that the variables \textbf{painexer}, \textbf{cp}, \textbf{ekgmo}, \textbf{ekgyr}, \textbf{proto}, \textbf{thaldur}, \textbf{thaltime}, \textbf{cmo} and \text{cyr} are highly collinear with other variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -196,9 +217,27 @@ From the scree plot in Figure \ref{q3-hun-screeplot} we see that we keep 6 compo
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single]{question3output/hunpcaloadings.txt}
+\lstinputlisting[frame=single, title={Hungary PCA loadings}]{question3output/hunpcaloadings.txt}
+
+We see that the first principle component is mostly formed of \textbf{proto}, \textbf{met}, \textbf{thaldur} and \textbf{thaltime} variables.
+
+The second principle component is mostly formed of \textbf{cyr}, \textbf{ekgyr} and \textbf{pro} variables.
+
+The third principle component is mostly formed of \textbf{cp}, \textbf{painexer} and \textbf{relrest} variables.
+
+The fourth principle component is mostly formed of \textbf{nitr} and \textbf{pro} variables.
+
+The firth principle component is mostly formed of \textbf{rldv5e} and \textbf{rldv5} variables.
+
+The sixth principle component is mostly formed of \textbf{ekgday} and \textbf{cday} variables.
 
 \subsubsection{Longbeach}
+
+After removing dummy variables and variables with at least $50\%$ NA data, we are left with 50 variables and 94 observations.
+
+\lstinputlisting[frame=single, title={Longbeach variance inflation factor}]{question3output/lonvif.txt}
+
+From the variance inflation factor we see that the variables \textbf{cp}, \textbf{ekgyr}, \textbf{thaldur}, \textbf{met} and \textbf{cyr} are highly collinear with other variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -212,9 +251,37 @@ From the scree plot in Figure \ref{q3-lon-screeplot} we see that we keep 11 comp
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single]{question3output/lonpcaloadings.txt}
+\lstinputlisting[frame=single, title={Longbeach PCA loadings}]{question3output/lonpcaloadings.txt}
+
+We see that the first principle component is mostly formed of \textbf{ekgyr}, \textbf{cyr} and \textbf{proto} variables.
+
+The second principle component is mostly formed of \textbf{thaldur}, \textbf{met} variables.
+
+The third principle component is mostly formed of \textbf{htn}, \textbf{trestbps} and \textbf{cigs} variables.
+
+The fourth principle component is mostly formed of \textbf{years}, \textbf{smoke} and \textbf{cigs} variables.
+
+The firth principle component is mostly formed of \textbf{thalrest}, \textbf{thalach} and \textbf{painexer} variables.
+
+The sixth principle component is mostly formed of \textbf{rcaprox}, \textbf{relrest} and \textbf{cp} variables.
+
+The seventh principle component is mostly formed of \textbf{ekgday}, \textbf{rldv5} and \textbf{thalach} variables.
+
+The eight principle component is mostly formed of \textbf{diag}, \textbf{cday} and \textbf{om2} variables.
+
+The ninth principle component is mostly formed of \textbf{om1}, \textbf{cmo} and \textbf{ekgmo} variables.
+
+The tenth principle component is mostly formed of \textbf{famhist}, \textbf{fbs} and \textbf{cday} variables.
+
+The eleventh principle component is mostly formed of \textbf{ekgmo}, \textbf{trestbpd}, \textbf{cmo} and \textbf{laddist} variables.
 
 \subsubsection{Switzerland}
+
+After removing dummy variables and variables with at least $13\%$ NA data, we are left with 39 variables and 101 observations.
+
+\lstinputlisting[frame=single, title={Switzerland variance inflation factor}]{question3output/swivif.txt}
+
+From the variance inflation factor we see that the variables \textbf{ekgmo}, \textbf{ekgyr} and \textbf{cmo} are highly collinear with other variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -228,7 +295,17 @@ From the scree plot in Figure \ref{q3-swi-screeplot} we see that we keep 5 compo
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single]{question3output/swipcaloadings.txt}
+\lstinputlisting[frame=single, title={Switzerland PCA loadings}]{question3output/swipcaloadings.txt}
+
+We see that the first principle component is mostly formed of \textbf{cmo}, \textbf{ekgmo}, \textbf{ekgyr} and \textbf{cyr} variables.
+
+The second principle component is mostly formed of \textbf{cp}, \textbf{thalrest}, \textbf{painloc}, and \textbf{painexer} variables.
+
+The third principle component is mostly formed of \textbf{trestbps} and \textbf{age} variables.
+
+The fourth principle component is mostly formed of \textbf{tpeakbps}, \textbf{tpeakbpd} and \textbf{oldpeak} variables.
+
+The firth principle component is mostly formed of \textbf{thaldur} and \textbf{laddist} variables.
 
 \subsection{Question 4}
 

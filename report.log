@@ -1,15 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.22)  27 APR 2016 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.12.17)  28 APR 2016 15:58
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
-**report.tex
-(/home/huaraz2/Desktop/multivarite/Project/report.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+**./report.tex
+(./report.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(c:/dev/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+(c:/dev/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,18 +22,23 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -49,45 +53,57 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 95.
- (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen113
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen114
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count91
 LaTeX Info: Redefining \frac on input line 199.
@@ -102,8 +118,8 @@ LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen115
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count96
 \c@MaxMatrixCols=\count97
 \dotsspace@=\muskip10
@@ -124,21 +140,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -155,13 +177,15 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
 Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
 Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
@@ -174,19 +198,23 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen122
 \Hy@linkcounter=\count103
 \Hy@pagecounter=\count104
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count105
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -197,7 +225,8 @@ Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count106
- (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -222,16 +251,19 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/dev/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count111
 \c@bookmark@seq@number=\count112
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip46
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count113
 \lst@gtempboxa=\box28
 \lst@token=\toks21
@@ -244,16 +276,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \lst@newlines=\count117
 \lst@lineno=\count118
 \lst@maxwidth=\dimen129
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count119
 \lst@skipnumbers=\count120
 \lst@framebox=\box29
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read1
 \epsfframemargin=\dimen130
@@ -264,14 +299,14 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsfxsize=\dimen135
 \epsfysize=\dimen136
 \pspoints=\dimen137
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+) (c:/dev/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count121
 \float@exts=\toks22
 \float@box=\box30
 \@float@everytoks=\toks23
 \@floatcapt=\box31
-) (/home/huaraz2/Desktop/multivarite/Project/report.aux)
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -323,7 +358,7 @@ LaTeX Font Info:    ... okay on input line 16.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(c:/dev/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen138
@@ -336,22 +371,28 @@ LaTeX Font Info:    ... okay on input line 16.
 \MPnumerator=\count126
 \makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks25
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (c:/dev/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 16.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
- (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+
+(c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count128
@@ -359,34 +400,41 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
- (/home/huaraz2/Desktop/multivarite/Project/report.out) (/home/huaraz2/Desktop/multivarite/Project/report.out)
+
+(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
 \c@lstlisting=\count129
 LaTeX Font Info:    Try loading font information for U+msa on input line 18.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 18.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: No \author given.
 
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 38.
-(/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt) [1
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 38.
+(./Q2_output/Q2_1.txt) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
+{c:/dev/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Q2_outpu
+t/Q2_2_1.txt
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 11.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -421,7 +469,8 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [2] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_2.txt
+) [2]
+(./Q2_output/Q2_2_2.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -452,7 +501,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [3] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_3.txt
+) [3] (./Q2_output/Q2_2_3.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -483,7 +532,8 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [4] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_4.txt
+) [4]
+(./Q2_output/Q2_2_4.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -514,7 +564,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [5] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_5.txt
+) [5] (./Q2_output/Q2_2_5.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -545,7 +595,8 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [6] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_6.txt
+) [6]
+(./Q2_output/Q2_2_6.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -576,7 +627,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [7] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_7.txt
+) [7] (./Q2_output/Q2_2_7.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -607,7 +658,8 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [8] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_8.txt
+) [8]
+(./Q2_output/Q2_2_8.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -638,7 +690,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [9] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_9.txt
+) [9] (./Q2_output/Q2_2_9.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -669,7 +721,8 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [10] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_10.txt
+) [10]
+(./Q2_output/Q2_2_10.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -700,7 +753,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [11] (/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_11.txt
+) [11] (./Q2_output/Q2_2_11.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -732,7 +785,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 )
-(/home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_12.txt
+(./Q2_output/Q2_2_12.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -763,110 +816,160 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [12] (/home/huaraz2/Desktop/multivarite/Project/question3output/clevif.txt)
+) [12] (./question3output/clevif.txt)
 Package epstopdf Info: Source file: <question3output/clescreeplot.eps>
-(epstopdf)                    date: 2016-04-27 22:03:06
-(epstopdf)                    size: 7110 bytes
-(epstopdf)             Output file: <question3output/clescreeplot-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-27 22:03:06
+(epstopdf)                    date: 2016-04-27 16:02:51
+(epstopdf)                    size: 7396 bytes
+(epstopdf)             Output file: <question3output/clescreeplot-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-04-27 16:03:20
 (epstopdf)                    size: 12303 bytes
-(epstopdf)             Command: <epstopdf --outfile=question3output/clescreeplot-eps-converted-to.pdf question3output/clescreeplot.eps>
-(epstopdf)             \includegraphics on input line 173.
+(epstopdf)             Command: <repstopdf --outfile=question3output/clescreepl
+ot-eps-converted-to.pdf question3output/clescreeplot.eps>
+(epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
- <question3output/clescreeplot-eps-converted-to.pdf, id=490, 433.62pt x 289.08pt>
+
+<question3output/clescreeplot-eps-converted-to.pdf, id=490, 433.62pt x 289.08pt
+>
 File: question3output/clescreeplot-eps-converted-to.pdf Graphic file (type pdf)
+
  <use question3output/clescreeplot-eps-converted-to.pdf>
-Package pdftex.def Info: question3output/clescreeplot-eps-converted-to.pdf used on input line 173.
+Package pdftex.def Info: question3output/clescreeplot-eps-converted-to.pdf used
+ on input line 176.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- (/home/huaraz2/Desktop/multivarite/Project/question3output/clepcaloadings.txt [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+
+(./question3output/clepcaloadings.txt [13pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.1}) has been already used, duplicate ignored
+
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.16 ekgyr 
-                      0.414         0.193                0.268        -0.129... </home/huaraz2/Desktop/multivarite/Project/question3output/clescreeplot-eps-converted-to.pdf>])
+l.5 cp 
+              0.208                                            0.384        ...
+ <./question3output/clescreeplot-eps-converted-to.pdf>])
+(./question3output/hunvif.txt [14])
 Package epstopdf Info: Source file: <question3output/hunscreeplot.eps>
-(epstopdf)                    date: 2016-04-27 22:03:06
-(epstopdf)                    size: 7155 bytes
-(epstopdf)             Output file: <question3output/hunscreeplot-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-27 22:03:06
+(epstopdf)                    date: 2016-04-27 16:02:56
+(epstopdf)                    size: 7447 bytes
+(epstopdf)             Output file: <question3output/hunscreeplot-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-04-27 16:03:22
 (epstopdf)                    size: 12301 bytes
-(epstopdf)             Command: <epstopdf --outfile=question3output/hunscreeplot-eps-converted-to.pdf question3output/hunscreeplot.eps>
-(epstopdf)             \includegraphics on input line 189.
+(epstopdf)             Command: <repstopdf --outfile=question3output/hunscreepl
+ot-eps-converted-to.pdf question3output/hunscreeplot.eps>
+(epstopdf)             \includegraphics on input line 210.
 Package epstopdf Info: Output file is already uptodate.
- <question3output/hunscreeplot-eps-converted-to.pdf, id=537, 433.62pt x 289.08pt>
+
+<question3output/hunscreeplot-eps-converted-to.pdf, id=574, 433.62pt x 289.08pt
+>
 File: question3output/hunscreeplot-eps-converted-to.pdf Graphic file (type pdf)
+
  <use question3output/hunscreeplot-eps-converted-to.pdf>
-Package pdftex.def Info: question3output/hunscreeplot-eps-converted-to.pdf used on input line 189.
+Package pdftex.def Info: question3output/hunscreeplot-eps-converted-to.pdf used
+ on input line 210.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+
+(./question3output/hunpcaloadings.txt [15pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.2}) has been already used, duplicate ignored
+
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.199 ...ngle]{question3output/hunpcaloadings.txt}
-                                                   </home/huaraz2/Desktop/multivarite/Project/question3output/hunscreeplot-eps-converted-to.pdf>] (/home/huaraz2/Desktop/multivarite/Project/question3output/hunpcaloadings.txt)
+l.20 diuretic 
+                             0.129 -0.101  0.149         0.275  0.123  0.377...
+ <./question3output/hunscreeplot-eps-converted-to.pdf>])
+(./question3output/lonvif.txt)
 Package epstopdf Info: Source file: <question3output/lonscreeplot.eps>
-(epstopdf)                    date: 2016-04-27 22:03:06
-(epstopdf)                    size: 7176 bytes
-(epstopdf)             Output file: <question3output/lonscreeplot-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-27 22:03:06
+(epstopdf)                    date: 2016-04-27 16:02:59
+(epstopdf)                    size: 7467 bytes
+(epstopdf)             Output file: <question3output/lonscreeplot-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-04-27 16:03:23
 (epstopdf)                    size: 12413 bytes
-(epstopdf)             Command: <epstopdf --outfile=question3output/lonscreeplot-eps-converted-to.pdf question3output/lonscreeplot.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             Command: <repstopdf --outfile=question3output/lonscreepl
+ot-eps-converted-to.pdf question3output/lonscreeplot.eps>
+(epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
- <question3output/lonscreeplot-eps-converted-to.pdf, id=588, 433.62pt x 289.08pt>
+
+<question3output/lonscreeplot-eps-converted-to.pdf, id=622, 433.62pt x 289.08pt
+>
 File: question3output/lonscreeplot-eps-converted-to.pdf Graphic file (type pdf)
+
  <use question3output/lonscreeplot-eps-converted-to.pdf>
-Package pdftex.def Info: question3output/lonscreeplot-eps-converted-to.pdf used on input line 205.
+Package pdftex.def Info: question3output/lonscreeplot-eps-converted-to.pdf used
+ on input line 244.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- [15] (/home/huaraz2/Desktop/multivarite/Project/question3output/lonpcaloadings.txt [16pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+ [16]
+(./question3output/lonpcaloadings.txt [17pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.3}) has been already used, duplicate ignored
+
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.34 exang 
-              -0.105 -0.260                      -0.141  0.135        -0.110... </home/huaraz2/Desktop/multivarite/Project/question3output/lonscreeplot-eps-converted-to.pdf>] [17])
+l.35 xhypo 
+              -0.128                       0.153 -0.177               -0.148 <.
+/question3output/lonscreeplot-eps-converted-to.pdf>] [18])
+(./question3output/swivif.txt)
 Package epstopdf Info: Source file: <question3output/swiscreeplot.eps>
-(epstopdf)                    date: 2016-04-27 22:03:06
-(epstopdf)                    size: 6925 bytes
-(epstopdf)             Output file: <question3output/swiscreeplot-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-04-27 22:03:06
+(epstopdf)                    date: 2016-04-27 16:03:02
+(epstopdf)                    size: 7195 bytes
+(epstopdf)             Output file: <question3output/swiscreeplot-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2016-04-27 16:03:25
 (epstopdf)                    size: 12194 bytes
-(epstopdf)             Command: <epstopdf --outfile=question3output/swiscreeplot-eps-converted-to.pdf question3output/swiscreeplot.eps>
-(epstopdf)             \includegraphics on input line 221.
+(epstopdf)             Command: <repstopdf --outfile=question3output/swiscreepl
+ot-eps-converted-to.pdf question3output/swiscreeplot.eps>
+(epstopdf)             \includegraphics on input line 288.
 Package epstopdf Info: Output file is already uptodate.
- <question3output/swiscreeplot-eps-converted-to.pdf, id=746, 433.62pt x 289.08pt>
+
+<question3output/swiscreeplot-eps-converted-to.pdf, id=778, 433.62pt x 289.08pt
+>
 File: question3output/swiscreeplot-eps-converted-to.pdf Graphic file (type pdf)
+
  <use question3output/swiscreeplot-eps-converted-to.pdf>
-Package pdftex.def Info: question3output/swiscreeplot-eps-converted-to.pdf used on input line 221.
+Package pdftex.def Info: question3output/swiscreeplot-eps-converted-to.pdf used
+ on input line 288.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- (/home/huaraz2/Desktop/multivarite/Project/question3output/swipcaloadings.txt [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+ [19]
+(./question3output/swipcaloadings.txt [20pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.4}) has been already used, duplicate ignored
+
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.23 tpeakbpd 
-              -0.116  0.125  0.148 -0.352         0.100                0.189 </home/huaraz2/Desktop/multivarite/Project/question3output/swiscreeplot-eps-converted-to.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
- (/home/huaraz2/Desktop/multivarite/Project/report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+l.35 cxmain 
+              -0.102 -0.128               -0.190  0.219        -0.208       ...
+ <./question3output/swiscreeplot-eps-converted-to.pdf>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 11CEAF1DDA5C7F9B1632347C6A627F6F;1000.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 8464 strings out of 494953
- 125543 string characters out of 6180977
- 320056 words of memory out of 5000000
- 10950 multiletter control sequences out of 15000+600000
+ 8509 strings out of 493054
+ 124285 string characters out of 6136542
+ 325776 words of memory out of 5000000
+ 11188 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 31i,6n,32p,238b,1627s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /home/huaraz2/Desktop/multivarite/Project/report.pdf (19 pages, 213862 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 31i,6n,32p,296b,1631s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:
+/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/dev/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/dev/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/dev/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/dev/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/dev/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/dev/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (21 pages, 224414 bytes).
 PDF statistics:
- 981 PDF objects out of 1000 (max. 8388607)
- 926 compressed objects within 10 object streams
- 644 named destinations out of 1000 (max. 500000)
+ 1034 PDF objects out of 1200 (max. 8388607)
+ 977 compressed objects within 10 object streams
+ 683 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
