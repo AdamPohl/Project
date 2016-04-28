@@ -1,0 +1,12 @@
+$test
+[1] 1972.425
+
+$correction
+[1] 1.421495
+
+$corrected.critical.value
+[1] 65.6649
+
+$p.value
+[1] 0
+

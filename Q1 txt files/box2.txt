@@ -1,0 +1,6 @@
+
+	Box's M-test for Homogeneity of Covariance Matrices
+
+data:  allproto1cc[, 2:9]
+Chi-Sq (approx.) = 75.591, df = 36, p-value = 0.0001247
+

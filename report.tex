@@ -9,6 +9,7 @@
 \usepackage{listings}
 \usepackage{epsf}
 \usepackage{float}
+\usepackage{siunitx}
 
 \title{MA3505 Multivariate Statistics Project 1}
 \date{\today}
@@ -23,6 +24,101 @@
 \section{Analysis to answer each research question}
 
 \subsection{Question 1}
+For this question since Cleveland and Switzerland only used one exercise protocol each rather than looking at the four data sets separately, it was looked at as one data set.Also, it appeared that the protocol values for Hungary did not match the description in the brief therefore the values were changed to:\\
+\centerline{150 = 7,}\\
+\centerline{100 = 9,}\\
+\centerline{50 = 11,}\\
+\centerline{25 = 11,}\\
+\centerline{175 = 7,}\\
+\centerline{125 = 8,}\\
+\centerline{75 = 10,}\\
+\centerline{130 = 8,}\\
+\centerline{200 = NA.}\\
+Each variable was assigned the number that represented the value to the nearest 25.
+
+Next I created a subset of the data set with just the required variables, the variables rldv5, rldv5e and met were removed as the first had no values for Cleveland and Switzerland and the latter two had most values missing for Switzerland. So the code for the subset was
+\begin{lstlisting}[frame=single]
+allproto1 = subset(all.df, select=c(proto,chol,
+thaldur, thaltime, thalach, thalrest, tpeakbps, tpeakbpd, trestbpd,
+oldpeak, indictor))
+\end{lstlisting}
+
+While running a couple of preliminary tests a lot of errors were occurring, therefore checking through each exercise protocol, protocols 4,6 and 7 had very few observations and protocol 12 had dependent columns, thus they were removed from the test.
+
+So that the tests would run the protocol classes will be renamed to:\\
+\centerline{8 = 2,}\\
+\centerline{9 = 3,}\\
+\centerline{10 = 4,}\\
+\centerline{11 = 5.}\\
+
+\newpage
+\subsubsection{Comparison of covariance matrices}
+To compute the mean tests first need to compute a hypotheses test to test equality of covariance matrices.For each we are testing\\ 
+\centerline{ $H_0 : \Sigma_A = \Sigma_{p_i}$ $vs$ $H_A $ $: not$  $H_0$}\\
+The tests give the following output
+
+
+\lstinputlisting[frame=single]{box1.txt}
+\underline{\textit{Exercise protocol 1(Bruce)}}\\
+p-value: $< \num{2.2e-16}$\\
+Decision: Reject the null\\
+Conclusion: There is statistical significant evidence covariance matrices 
+are differen.\\
+
+\lstinputlisting[frame=single]{box2.txt}
+\underline{\textit{Exercise protocol 2(8)(bike 125 kpa min/min)}}\\
+p-value: $< \num{0.0001247}$\\
+Decision: Reject the null\\
+Conclusion: There is statistical significant evidence covariance matrices 
+are different.\\
+
+\lstinputlisting[frame=single]{box3.txt}
+\underline{\textit{Exercise protocol 3(9)(bike 100 kpa min/min)}}\\
+p-value: $< \num{6.739e-05}$\\
+Decision: Reject the null\\
+Conclusion: There is statistical significant evidence covariance matrices 
+are different.\\
+
+\lstinputlisting[frame=single]{box4.txt}
+\underline{\textit{Exercise protocol 4(10)(bike 75 kpa min/min)}}\\
+p-value: $< \num{2.2e-16}$\\
+Decision: Reject the null\\
+Conclusion: There is statistical significant evidence covariance matrices 
+are different.\\
+
+\newpage  
+\lstinputlisting[frame=single]{box5.txt}
+\underline{\textit{Exercise protocol 5(10)(bike 50
+kpa min/min)}}\\
+p-value: $< \num{2.2e-16}$\\
+Decision: Reject the null\\
+Conclusion: There is statistical significant evidence covariance matrices 
+are different.\\
+
+All tests we reject the null so for the equality of mean tests we can use the James test.
+
+\subsubsection{Equality of mean tests}
+
+Running the Multivariate James returns:
+\lstinputlisting[frame=single]{Q1-Maovjames.txt}
+$H_0 : \mu_{p_1} = \mu_{p_2} = \mu_{p_3} = \mu_{p_4}  = \mu_{p_5}$ $vs$ $H_A :$ $not$ $H_0$\\
+p-value: $< \num{0}$\\
+Decision: Reject the null\\
+Conclusion: There is statistical significant evidence that the mean for each exercise protocol is different.\\
+\newpage
+
+To take a closer look, I conducted some two sample James tests to see if the means for any of the exercise protocols were equal. 
+From the results we see that again there is statistical significant evidence that no means are equal to each other but what is interesting to see firstly for the James test R =1 all tests had a zero p-value other than the protocols 2 and 3, and 3 and 4, (tests shown below). This is not surprising as these are the protocols performed on bikes (with the highest kpa's). 
+\lstinputlisting[frame=single]{Q1-james1.txt}
+$H_0 : \mu_{p_2} = \mu_{p_3}$ $vs$ $H_A :$ $not$ $H_0$\\
+
+
+\lstinputlisting[frame=single]{Q1-james2.txt}
+$H_0 : \mu_{p_3} = \mu_{p_4}$ $vs$ $H_A :$ $not$ $H_0$\\
+
+Finally, when conducting the R = 2 James test again all tests had p-value's that give evidence to reject the null but testing betweens protocols 1 and 5 gave an answer of zero.
+\lstinputlisting[frame=single]{Q1-james3.txt}
+$H_0 : \mu_{p_1} = \mu_{p_5}$ $vs$ $H_A :$ $not$ $H_0$\\
 
 \newpage
 \subsection{Question 2}
