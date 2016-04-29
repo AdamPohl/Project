@@ -2,9 +2,13 @@
 
 ## Importing Librays
 library(asbio)
+library(biotools)
 library(car)
 library(MASS)
 
+
+## Importing useful_test.r (from learning central)
+source("useful_tests.r")
 
 ## Names of each variable
 names =  c("id", "ccf", "age", "sex", "painloc", "painexer", "relrest", "pncaden", "cp", "trestbps", "htn", "chol", "smoke", "cigs", "years", "fbs", "dm", "famhist", "restecg", "ekgmo", "ekgday", "ekgyr", "dig", "prop", "nitr", "pro", "diuretic", "proto", "thaldur", "thaltime", "met", "thalach", "thalrest", "tpeakbps", "tpeakbpd", "dummy", "trestbpd", "exang", "xhypo", "oldpeak", "slope", "rldv5", "rldv5e", "ca", "restckm", "exerckm", "restef", "restwm", "exeref", "exerwm", "thal", "thalsev", "thalpul", "earlobe", "cmo", "cday", "cyr", "num", "lmt", "ladprox", "laddist", "diag", "cxmain", "ramus", "om1", "om2", "rcaprox", "rcadist", "lvx1", "lvx2", "lvx3", "lvx4", "lvf", "cathef", "junk", "place")
@@ -182,6 +186,110 @@ dev.off()
 
 
 #### Question 1 ####
+
+### Changing Values for Hungary
+hungary.df$proto[hungary.df$proto==150] <- 7
+hungary.df$proto[hungary.df$proto==100] <- 9
+hungary.df$proto[hungary.df$proto==50] <- 11
+###Nearest to 50
+hungary.df$proto[hungary.df$proto==25] <- 11
+###Nearest to 150
+hungary.df$proto[hungary.df$proto==175] <- 7
+hungary.df$proto[hungary.df$proto==125] <- 8
+hungary.df$proto[hungary.df$proto==75] <- 10
+###Nearest to 125
+hungary.df$proto[hungary.df$proto==130] <- 8
+###Over 25 away from anything there NA
+hungary.df$proto[hungary.df$proto==200] <- NA
+
+
+###Same as above
+all.df$proto[all.df$proto==150] <- 7
+all.df$proto[all.df$proto==100] <- 9
+all.df$proto[all.df$proto==50] <- 11
+all.df$proto[all.df$proto==25] <- 11
+all.df$proto[all.df$proto==175] <- 7
+all.df$proto[all.df$proto==125] <- 8
+all.df$proto[all.df$proto==75] <- 10
+all.df$proto[all.df$proto==130] <- 8
+all.df$proto[all.df$proto==200] <- NA
+
+###Creating a subset with just the required protocols , the variables rldv5, rldv5e and met were removed.
+allproto1 = subset(all.df, select=c(proto,chol,
+                                    thaldur, thaltime, thalach, thalrest, tpeakbps, tpeakbpd, trestbpd,
+                                    oldpeak))
+
+###sufficient observations for each proto.
+allproto1[allproto1[,1]==7,]
+
+allproto1$proto[allproto1$proto==4] <- NA
+allproto1$proto[allproto1$proto==12] <- NA
+allproto1$proto[allproto1$proto==6] <- NA
+allproto1$proto[allproto1$proto==7] <- NA
+
+### Assigning new class names
+allproto1$proto[allproto1$proto==8] <- 2
+allproto1$proto[allproto1$proto==9] <- 3
+allproto1$proto[allproto1$proto==10] <- 4
+allproto1$proto[allproto1$proto==11] <- 5
+
+### Include only complete cases
+allproto1cc=allproto1[complete.cases(allproto1),]
+
+### Creating vectors to run tests
+allproto1cc1 = allproto1cc[,1] == 1
+allproto1cc2 = allproto1cc[,1] == 2
+allproto1cc3 = allproto1cc[,1]  == 3
+allproto1cc4 = allproto1cc[,1]  == 4
+allproto1cc5 = allproto1cc[,1]  == 5
+
+boxM(allproto1cc[,2:9], allproto1cc1)
+boxM(allproto1cc[,2:9], allproto1cc2)
+boxM(allproto1cc[,2:9], allproto1cc3)
+boxM(allproto1cc[,2:9], allproto1cc4)
+boxM(allproto1cc[,2:9], allproto1cc5)
+
+## Next to run hypothesis tests for the mean vector first using the multivariate james test
+maovjames(allproto1cc[,2:9], allproto1cc[,1])
+
+
+### subsetting the protos
+proto1 = subset(allproto1cc, proto == 1)
+proto2 = subset(allproto1cc, proto == 2)
+proto3 = subset(allproto1cc, proto == 3)
+proto4 = subset(allproto1cc, proto == 4)
+proto5 = subset(allproto1cc, proto == 5)
+
+### Conducting James test
+### R=1
+james(proto1[, 2:9], proto2[, 2:9], R=1)
+james(proto1[, 2:9], proto3[, 2:9], R=1)
+james(proto1[, 2:9], proto4[, 2:9], R=1)
+james(proto1[, 2:9], proto5[, 2:9], R=1)
+
+james(proto2[, 2:9], proto3[, 2:9], R=1)
+james(proto2[, 2:9], proto4[, 2:9], R=1)
+james(proto2[, 2:9], proto5[, 2:9], R=1)
+
+james(proto3[, 2:9], proto4[, 2:9], R=1)
+james(proto3[, 2:9], proto5[, 2:9], R=1)
+
+james(proto4[, 2:9], proto5[, 2:9], R=1)
+
+### R=2
+james(proto1[, 2:9], proto2[, 2:9], R=2)
+james(proto1[, 2:9], proto3[, 2:9], R=2)
+james(proto1[, 2:9], proto4[, 2:9], R=2)
+james(proto1[, 2:9], proto5[, 2:9], R=2)
+
+james(proto2[, 2:9], proto3[, 2:9], R=2)
+james(proto2[, 2:9], proto4[, 2:9], R=2)
+james(proto2[, 2:9], proto5[, 2:9], R=2)
+
+james(proto3[, 2:9], proto4[, 2:9], R=2)
+james(proto3[, 2:9], proto5[, 2:9], R=2)
+
+james(proto4[, 2:9], proto5[, 2:9], R=2)
 
 
 
