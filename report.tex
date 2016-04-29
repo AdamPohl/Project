@@ -57,13 +57,13 @@ For the exploratory data analysis I will be looking at the following variables:
 \end{itemize}
 
 First we see the correlation matrix for these variables for the whole data set.
-\lstinputlisting[frame=single]{Intcormatrix.txt}
+\lstinputlisting[frame=single]{"intro files/Intcormatrix.txt"}
 
 We can see hear that there are no highly correlated variables, naturally one would think age would have an effect on some of the variables.Below shows a large scatterplot matrix for 6 variables that take on more than 2 values.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{intplot2}
+		\includegraphics[width=12cm]{intro files/intplot2.png}
 	\end{center}
 	\caption{Scatterplot matrix}
 \end{figure}
@@ -72,21 +72,21 @@ To show what the data looks like further below shows bivariate boxplots of \text
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{intplot3}
+		\includegraphics[width=12cm]{intro files/intplot3.png}
 	\end{center}
 	\caption{Bivariate boxplot: Age against Chol}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{intplot4}
+		\includegraphics[width=12cm]{intro files/intplot4.png}
 	\end{center}
 	\caption{Bivariate boxplot: Age against thalech}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{intplot5}
+		\includegraphics[width=12cm]{intro files/intplot5.png}
 	\end{center}
 	\caption{Bivariate boxplot: Age against Oldpeak}
 \end{figure}
@@ -131,28 +131,28 @@ To compute the mean tests first need to compute a hypotheses test to test equali
 The tests give the following output
 
 
-\lstinputlisting[frame=single]{box1.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/box1.txt"}
 \underline{\textit{Exercise protocol 1(Bruce)}}\\
 p-value: $< \num{2.2e-16}$\\
 Decision: Reject the null\\
 Conclusion: There is statistical significant evidence covariance matrices 
 are differen.\\
 
-\lstinputlisting[frame=single]{box2.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/box2.txt"}
 \underline{\textit{Exercise protocol 2(8)(bike 125 kpa min/min)}}\\
 p-value: $< \num{0.0001247}$\\
 Decision: Reject the null\\
 Conclusion: There is statistical significant evidence covariance matrices 
 are different.\\
 
-\lstinputlisting[frame=single]{box3.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/box3.txt"}
 \underline{\textit{Exercise protocol 3(9)(bike 100 kpa min/min)}}\\
 p-value: $< \num{6.739e-05}$\\
 Decision: Reject the null\\
 Conclusion: There is statistical significant evidence covariance matrices 
 are different.\\
 
-\lstinputlisting[frame=single]{box4.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/box4.txt"}
 \underline{\textit{Exercise protocol 4(10)(bike 75 kpa min/min)}}\\
 p-value: $< \num{2.2e-16}$\\
 Decision: Reject the null\\
@@ -160,7 +160,7 @@ Conclusion: There is statistical significant evidence covariance matrices
 are different.\\
 
 \newpage  
-\lstinputlisting[frame=single]{box5.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/box5.txt"}
 \underline{\textit{Exercise protocol 5(10)(bike 50
 kpa min/min)}}\\
 p-value: $< \num{2.2e-16}$\\
@@ -173,7 +173,7 @@ All tests we reject the null so for the equality of mean tests we can use the Ja
 \subsubsection{Equality of mean tests}
 
 Running the Multivariate James returns:
-\lstinputlisting[frame=single]{Q1-Maovjames.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/Q1-Maovjames.txt"}
 $H_0 : \mu_{p_1} = \mu_{p_2} = \mu_{p_3} = \mu_{p_4}  = \mu_{p_5}$ $vs$ $H_A :$ $not$ $H_0$\\
 p-value: $< \num{0}$\\
 Decision: Reject the null\\
@@ -182,15 +182,15 @@ Conclusion: There is statistical significant evidence that the mean for each exe
 
 To take a closer look, I conducted some two sample James tests to see if the means for any of the exercise protocols were equal. 
 From the results we see that again there is statistical significant evidence that no means are equal to each other but what is interesting to see firstly for the James test R =1 all tests had a zero p-value other than the protocols 2 and 3, and 3 and 4, (tests shown below). This is not surprising as these are the protocols performed on bikes (with the highest kpa's). 
-\lstinputlisting[frame=single]{Q1-james1.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/Q1-james1.txt"}
 $H_0 : \mu_{p_2} = \mu_{p_3}$ $vs$ $H_A :$ $not$ $H_0$\\
 
 
-\lstinputlisting[frame=single]{Q1-james2.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/Q1-james2.txt"}
 $H_0 : \mu_{p_3} = \mu_{p_4}$ $vs$ $H_A :$ $not$ $H_0$\\
 
 Finally, when conducting the R = 2 James test again all tests had p-value's that give evidence to reject the null but testing betweens protocols 1 and 5 gave an answer of zero.
-\lstinputlisting[frame=single]{Q1-james3.txt}
+\lstinputlisting[frame=single]{"Q1 txt files/Q1-james3.txt"}
 $H_0 : \mu_{p_1} = \mu_{p_5}$ $vs$ $H_A :$ $not$ $H_0$\\
 
 \newpage

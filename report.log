@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.12.17)  28 APR 2016 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.4.28)  29 APR 2016 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./report.tex
 (./report.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2016/03/31>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (c:/dev/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (c:/dev/texlive/2015/texmf-dist/tex/latex/base/size10.clo
@@ -306,23 +306,323 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks23
 \@floatcapt=\box31
-) (./report.aux)
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx.sty
+(c:/dev/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/03/28 v6468 L3 programming layer (loader) 
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/03/28 v6468 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/02/12 v6412 L3 Bootstrap code
+L3 Module: l3names 2016/03/11 v6433 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
+L3 Module: l3str 2016/03/24 v6441 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/03/24 v6441 L3 Integers
+\c_max_int=\count122
+\l_tmpa_int=\count123
+\l_tmpb_int=\count124
+\g_tmpa_int=\count125
+\g_tmpb_int=\count126
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count127
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2016/03/26 v6465 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2016/03/26 v6464 L3 Messages
+L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
+\l_iow_line_count_int=\count128
+\l__iow_target_count_int=\count129
+\l__iow_current_line_int=\count130
+\l__iow_current_word_int=\count131
+\l__iow_current_indentation_int=\count132
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen138
+\c_max_dim=\dimen139
+\l_tmpa_dim=\dimen140
+\l_tmpb_dim=\dimen141
+\g_tmpa_dim=\dimen142
+\g_tmpb_dim=\dimen143
+\c_zero_skip=\skip47
+\c_max_skip=\skip48
+\l_tmpa_skip=\skip49
+\l_tmpb_skip=\skip50
+\g_tmpa_skip=\skip51
+\g_tmpb_skip=\skip52
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count133
+\l_keys_choice_int=\count134
+L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
+\c__fp_leading_shift_int=\count135
+\c__fp_middle_shift_int=\count136
+\c__fp_trailing_shift_int=\count137
+\c__fp_big_leading_shift_int=\count138
+\c__fp_big_middle_shift_int=\count139
+\c__fp_big_trailing_shift_int=\count140
+\c__fp_Bigg_leading_shift_int=\count141
+\c__fp_Bigg_middle_shift_int=\count142
+\c__fp_Bigg_trailing_shift_int=\count143
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box32
+\l_tmpa_box=\box33
+\l_tmpb_box=\box34
+\g_tmpa_box=\box35
+\g_tmpb_box=\box36
+L3 Module: l3coffins 2016/03/24 v6440 L3 Coffin code layer
+\l__coffin_internal_box=\box37
+\l__coffin_internal_dim=\dimen144
+\l__coffin_offset_x_dim=\dimen145
+\l__coffin_offset_y_dim=\dimen146
+\l__coffin_x_dim=\dimen147
+\l__coffin_y_dim=\dimen148
+\l__coffin_x_prime_dim=\dimen149
+\l__coffin_y_prime_dim=\dimen150
+\c_empty_coffin=\box38
+\l__coffin_aligned_coffin=\box39
+\l__coffin_aligned_internal_coffin=\box40
+\l_tmpa_coffin=\box41
+\l_tmpb_coffin=\box42
+\l__coffin_display_coffin=\box43
+\l__coffin_display_coord_coffin=\box44
+\l__coffin_display_pole_coffin=\box45
+\l__coffin_display_offset_dim=\dimen151
+\l__coffin_display_x_dim=\dimen152
+\l__coffin_display_y_dim=\dimen153
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/03/25 v6456 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen154
+\l__box_bottom_dim=\dimen155
+\l__box_left_dim=\dimen156
+\l__box_right_dim=\dimen157
+\l__box_top_new_dim=\dimen158
+\l__box_bottom_new_dim=\dimen159
+\l__box_left_new_dim=\dimen160
+\l__box_right_new_dim=\dimen161
+\l__box_internal_box=\box46
+\l__coffin_bounding_shift_dim=\dimen162
+\l__coffin_left_corner_dim=\dimen163
+\l__coffin_right_corner_dim=\dimen164
+\l__coffin_bottom_corner_dim=\dimen165
+\l__coffin_top_corner_dim=\dimen166
+\l__coffin_scaled_total_height_dim=\dimen167
+\l__coffin_scaled_width_dim=\dimen168
+L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count144
+))
+(c:/dev/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/03/28 v6468 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count145
+\l__xparse_m_args_int=\count146
+\l__xparse_mandatory_args_int=\count147
+\l__xparse_processor_int=\count148
+\l__xparse_v_nesting_int=\count149
+)
+Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen169
+\extrarowheight=\dimen170
+\NC@list=\toks24
+\extratabsurround=\skip53
+\backup@length=\skip54
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/03/28 v6468 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box47
+\l__siunitx_tmp_dim=\dimen171
+\l__siunitx_tmp_int=\count150
+\l__siunitx_number_mantissa_length_int=\count151
+\l__siunitx_number_uncert_length_int=\count152
+\l__siunitx_round_int=\count153
+\l__siunitx_process_decimal_int=\count154
+\l__siunitx_process_uncertainty_int=\count155
+\l__siunitx_process_fixed_int=\count156
+\l__siunitx_process_integer_min_int=\count157
+\l__siunitx_process_precision_int=\count158
+\l__siunitx_group_min_int=\count159
+\l__siunitx_angle_marker_box=\box48
+\l__siunitx_angle_unit_box=\box49
+\l__siunitx_angle_marker_dim=\dimen172
+\l__siunitx_angle_unit_dim=\dimen173
+\l__siunitx_unit_int=\count160
+\l__siunitx_unit_denominator_int=\count161
+\l__siunitx_unit_numerator_int=\count162
+\l__siunitx_unit_prefix_int=\count163
+\l__siunitx_unit_prefix_base_int=\count164
+\l__siunitx_unit_prefix_gram_int=\count165
+\l__siunitx_number_product_int=\count166
+\c__siunitx_one_fill_skip=\skip55
+\l__siunitx_table_unit_align_skip=\skip56
+\l__siunitx_table_exponent_dim=\dimen174
+\l__siunitx_table_integer_dim=\dimen175
+\l__siunitx_table_mantissa_dim=\dimen176
+\l__siunitx_table_marker_dim=\dimen177
+\l__siunitx_table_result_dim=\dimen178
+\l__siunitx_table_uncert_dim=\dimen179
+\l__siunitx_table_fill_pre_dim=\dimen180
+\l__siunitx_table_fill_post_dim=\dimen181
+\l__siunitx_table_fill_mid_dim=\dimen182
+\l__siunitx_table_pre_box=\box50
+\l__siunitx_table_post_box=\box51
+\l__siunitx_table_mantissa_box=\box52
+\l__siunitx_table_result_box=\box53
+\l__siunitx_table_number_align_skip=\skip57
+\l__siunitx_table_text_align_skip=\skip58
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7218.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7221.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7224.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7227.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7230.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7251.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7260.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7269.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7278.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7290.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7302.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7314.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7317.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7332.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7344.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7391.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7393.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7395.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7397.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7400.
+.................................................
+\g__file_internal_ior=\read2
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator-language
+-mappings.tex))) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -360,17 +660,17 @@ LaTeX Font Info:    ... okay on input line 16.
 
 (c:/dev/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen138
-\scratchbox=\box32
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen139
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count167
+\scratchdimen=\dimen183
+\scratchbox=\box54
+\nofMPsegments=\count168
+\nofMParguments=\count169
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count170
+\MPscratchDim=\dimen184
+\MPnumerator=\count171
+\makeMPintoPDFobject=\count172
+\everyMPtoPDFconversion=\toks26
 ) (c:/dev/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -386,8 +686,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 16.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (c:/dev/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -395,51 +695,183 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (c:/dev/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count173
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
 (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-\c@lstlisting=\count129
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+\c@lstlisting=\count174
+
+(c:/dev/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-ba
+sic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(c:/dev/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
+)
+\c__siunitx_mathsf_int=\count175
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
 
 (c:/dev/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (c:/dev/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+\c__siunitx_mathtt_int=\count176
+
 
 LaTeX Warning: No \author given.
 
-[1
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
+(c:/dev/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 55.
+ [1
 
 {c:/dev/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 38.
+nput line 60.
 
-(./Q2_output/Q2_1.txt) [2] (./Q2_output/Q2_2_1.txt
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 11.
+(./intro files/Intcormatrix.txt)
+
+LaTeX Warning: File `intro files/intplot2.png' not found on input line 66.
+
+<intro files/intplot2.png, id=93, 481.8pt x 481.8pt>
+File: intro files/intplot2.png Graphic file (type png)
+
+<use intro files/intplot2.png>
+Package pdftex.def Info: intro files/intplot2.png used on input line 66.
+(pdftex.def)             Requested size: 341.43306pt x 341.4408pt.
+ [2]
+
+LaTeX Warning: File `intro files/intplot3.png' not found on input line 75.
+
+<intro files/intplot3.png, id=135, 481.8pt x 481.8pt>
+File: intro files/intplot3.png Graphic file (type png)
+
+<use intro files/intplot3.png>
+Package pdftex.def Info: intro files/intplot3.png used on input line 75.
+(pdftex.def)             Requested size: 341.43306pt x 341.4408pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.79 
+      <./intro files/intplot2.png>]
+
+LaTeX Warning: File `intro files/intplot4.png' not found on input line 82.
+
+<intro files/intplot4.png, id=142, 481.8pt x 481.8pt>
+File: intro files/intplot4.png Graphic file (type png)
+
+<use intro files/intplot4.png>
+Package pdftex.def Info: intro files/intplot4.png used on input line 82.
+(pdftex.def)             Requested size: 341.43306pt x 341.4408pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.86 
+      <./intro files/intplot3.png>]
+
+LaTeX Warning: File `intro files/intplot5.png' not found on input line 89.
+
+<intro files/intplot5.png, id=149, 481.8pt x 481.8pt>
+File: intro files/intplot5.png Graphic file (type png)
+
+<use intro files/intplot5.png>
+Package pdftex.def Info: intro files/intplot5.png used on input line 89.
+(pdftex.def)             Requested size: 341.43306pt x 341.4408pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.93 
+      <./intro files/intplot4.png>] [6pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.120 
+       <./intro files/intplot5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--126
+
+ []
+
+[7] (./Q1 txt files/box1.txt
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 5.
 
 (c:/dev/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 11.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
-
-(c:/dev/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 5.
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
+
+ []
+
+(./Q1 txt files/box2.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+
+ []
+
+(./Q1 txt files/box3.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
+
+ []
+
+(./Q1 txt files/box4.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 156--161
+
+ []
+
+[8] (./Q1 txt files/box5.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 165--170
+
+ []
+
+(./Q1 txt files/Q1-Maovjames.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
+
+ []
+
+[9] (./Q1 txt files/Q1-james1.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+(./Q1 txt files/Q1-james2.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+(./Q1 txt files/Q1-james3.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+[10] (./Q2_output/Q2_1.txt) [11] (./Q2_output/Q2_2_1.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -470,7 +902,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [3]
+) [12]
 (./Q2_output/Q2_2_2.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -502,7 +934,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [4] (./Q2_output/Q2_2_3.txt
+) [13] (./Q2_output/Q2_2_3.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -533,7 +965,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [5]
+) [14]
 (./Q2_output/Q2_2_4.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -565,7 +997,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [6] (./Q2_output/Q2_2_5.txt
+) [15] (./Q2_output/Q2_2_5.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -596,7 +1028,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [7]
+) [16]
 (./Q2_output/Q2_2_6.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -628,7 +1060,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [8] (./Q2_output/Q2_2_7.txt
+) [17] (./Q2_output/Q2_2_7.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -659,7 +1091,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [9]
+) [18]
 (./Q2_output/Q2_2_8.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -691,7 +1123,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [10] (./Q2_output/Q2_2_9.txt
+) [19] (./Q2_output/Q2_2_9.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -722,7 +1154,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [11]
+) [20]
 (./Q2_output/Q2_2_10.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -754,7 +1186,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [12] (./Q2_output/Q2_2_11.txt
+) [21] (./Q2_output/Q2_2_11.txt
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -817,7 +1249,7 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [13] (./question3output/clevif.txt)
+) [22] (./question3output/clevif.txt)
 Package epstopdf Info: Source file: <question3output/clescreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:02:51
 (epstopdf)                    size: 7396 bytes
@@ -827,20 +1259,20 @@ Package epstopdf Info: Source file: <question3output/clescreeplot.eps>
 (epstopdf)                    size: 12303 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/clescreepl
 ot-eps-converted-to.pdf question3output/clescreeplot.eps>
-(epstopdf)             \includegraphics on input line 176.
+(epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/clescreeplot-eps-converted-to.pdf, id=495, 433.62pt x 289.08pt
+<question3output/clescreeplot-eps-converted-to.pdf, id=691, 433.62pt x 289.08pt
 >
 File: question3output/clescreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/clescreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/clescreeplot-eps-converted-to.pdf used
- on input line 176.
+ on input line 345.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
 
-(./question3output/clepcaloadings.txt [14pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.1}) has been already used, duplicate ignored
+(./question3output/clepcaloadings.txt [23pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.5}) has been already used, duplicate ignored
 
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -848,7 +1280,7 @@ h the same identifier (name{figure.1}) has been already used, duplicate ignored
 l.5 cp 
               0.208                                            0.384        ...
  <./question3output/clescreeplot-eps-converted-to.pdf>])
-(./question3output/hunvif.txt [15])
+(./question3output/hunvif.txt [24])
 Package epstopdf Info: Source file: <question3output/hunscreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:02:56
 (epstopdf)                    size: 7447 bytes
@@ -858,20 +1290,20 @@ Package epstopdf Info: Source file: <question3output/hunscreeplot.eps>
 (epstopdf)                    size: 12301 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/hunscreepl
 ot-eps-converted-to.pdf question3output/hunscreeplot.eps>
-(epstopdf)             \includegraphics on input line 210.
+(epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/hunscreeplot-eps-converted-to.pdf, id=578, 433.62pt x 289.08pt
+<question3output/hunscreeplot-eps-converted-to.pdf, id=773, 433.62pt x 289.08pt
 >
 File: question3output/hunscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/hunscreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/hunscreeplot-eps-converted-to.pdf used
- on input line 210.
+ on input line 379.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
 
-(./question3output/hunpcaloadings.txt [16pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.2}) has been already used, duplicate ignored
+(./question3output/hunpcaloadings.txt [25pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.6}) has been already used, duplicate ignored
 
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -889,27 +1321,27 @@ Package epstopdf Info: Source file: <question3output/lonscreeplot.eps>
 (epstopdf)                    size: 12413 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/lonscreepl
 ot-eps-converted-to.pdf question3output/lonscreeplot.eps>
-(epstopdf)             \includegraphics on input line 244.
+(epstopdf)             \includegraphics on input line 413.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/lonscreeplot-eps-converted-to.pdf, id=626, 433.62pt x 289.08pt
+<question3output/lonscreeplot-eps-converted-to.pdf, id=823, 433.62pt x 289.08pt
 >
 File: question3output/lonscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/lonscreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/lonscreeplot-eps-converted-to.pdf used
- on input line 244.
+ on input line 413.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- [17]
-(./question3output/lonpcaloadings.txt [18pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.3}) has been already used, duplicate ignored
+ [26]
+(./question3output/lonpcaloadings.txt [27pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.7}) has been already used, duplicate ignored
 
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.35 xhypo 
               -0.128                       0.153 -0.177               -0.148 <.
-/question3output/lonscreeplot-eps-converted-to.pdf>] [19])
+/question3output/lonscreeplot-eps-converted-to.pdf>] [28])
 (./question3output/swivif.txt)
 Package epstopdf Info: Source file: <question3output/swiscreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:03:02
@@ -920,165 +1352,171 @@ Package epstopdf Info: Source file: <question3output/swiscreeplot.eps>
 (epstopdf)                    size: 12194 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/swiscreepl
 ot-eps-converted-to.pdf question3output/swiscreeplot.eps>
-(epstopdf)             \includegraphics on input line 288.
+(epstopdf)             \includegraphics on input line 457.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/swiscreeplot-eps-converted-to.pdf, id=783, 433.62pt x 289.08pt
+<question3output/swiscreeplot-eps-converted-to.pdf, id=978, 433.62pt x 289.08pt
 >
 File: question3output/swiscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/swiscreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/swiscreeplot-eps-converted-to.pdf used
- on input line 288.
+ on input line 457.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
- [20]
-(./question3output/swipcaloadings.txt [21pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.4}) has been already used, duplicate ignored
+ [29]
+(./question3output/swipcaloadings.txt [30pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.8}) has been already used, duplicate ignored
 
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.35 cxmain 
               -0.102 -0.128               -0.190  0.219        -0.208       ...
- <./question3output/swiscreeplot-eps-converted-to.pdf>]) [22]
-(./Q4_output/q4-clev.txt [23])
-<Q4_pics/Clev-Histgram.png, id=928, 474.27188pt x 479.54156pt>
+ <./question3output/swiscreeplot-eps-converted-to.pdf>]) [31]
+(./Q4_output/q4-clev.txt [32])
+<Q4_pics/Clev-Histgram.png, id=1125, 474.27188pt x 479.54156pt>
 File: Q4_pics/Clev-Histgram.png Graphic file (type png)
 
 <use Q4_pics/Clev-Histgram.png>
-Package pdftex.def Info: Q4_pics/Clev-Histgram.png used on input line 322.
+Package pdftex.def Info: Q4_pics/Clev-Histgram.png used on input line 491.
 (pdftex.def)             Requested size: 341.43306pt x 345.24039pt.
- [24]
-<Q4_pics/Clev-scatter.png, id=974, 485.56406pt x 487.8225pt>
+ [33]
+<Q4_pics/Clev-scatter.png, id=1171, 485.56406pt x 487.8225pt>
 File: Q4_pics/Clev-scatter.png Graphic file (type png)
 
 <use Q4_pics/Clev-scatter.png>
-Package pdftex.def Info: Q4_pics/Clev-scatter.png used on input line 330.
+Package pdftex.def Info: Q4_pics/Clev-scatter.png used on input line 499.
 (pdftex.def)             Requested size: 341.43306pt x 343.01424pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.335 
-       <./Q4_pics/Clev-Histgram.png>] [26pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.6}) has been already used, duplicate ignored
-
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.336 \newpage
-               <./Q4_pics/Clev-scatter.png>] (./Q4_output/Q4-hung.txt [27])
-<Q4_pics/Hung-Histgram.png, id=1050, 470.50781pt x 467.49657pt>
-File: Q4_pics/Hung-Histgram.png Graphic file (type png)
-
-<use Q4_pics/Hung-Histgram.png>
-Package pdftex.def Info: Q4_pics/Hung-Histgram.png used on input line 343.
-(pdftex.def)             Requested size: 341.43306pt x 339.2509pt.
-
-<Q4_pics/Hung-scatter.png, id=1051, 484.05844pt x 484.81125pt>
-File: Q4_pics/Hung-scatter.png Graphic file (type png)
-
-<use Q4_pics/Hung-scatter.png>
-Package pdftex.def Info: Q4_pics/Hung-scatter.png used on input line 351.
-(pdftex.def)             Requested size: 341.43306pt x 341.97691pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.356 
-       <./Q4_pics/Hung-Histgram.png>] [29pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.8}) has been already used, duplicate ignored
-
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.357 \newpage
-               <./Q4_pics/Hung-scatter.png>] (./Q4_output/Q4-long.txt [30])
-<Q4_pics/Long-Histgram.png, id=1148, 464.4853pt x 465.99094pt>
-File: Q4_pics/Long-Histgram.png Graphic file (type png)
-
-<use Q4_pics/Long-Histgram.png>
-Package pdftex.def Info: Q4_pics/Long-Histgram.png used on input line 364.
-(pdftex.def)             Requested size: 341.43306pt x 342.54544pt.
- [31]
-<Q4_pics/Long-scatter.png, id=1198, 478.03593pt x 476.53032pt>
-File: Q4_pics/Long-scatter.png Graphic file (type png)
-
-<use Q4_pics/Long-scatter.png>
-Package pdftex.def Info: Q4_pics/Long-scatter.png used on input line 372.
-(pdftex.def)             Requested size: 341.43306pt x 340.35303pt.
- [32pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.377 
-       <./Q4_pics/Long-Histgram.png>] [33pdfTeX warning (ext4): destination wit
+l.504 
+       <./Q4_pics/Clev-Histgram.png>] [35pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.10}) has been already used, duplicate ignore
 d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.378 \newpage
-               <./Q4_pics/Long-scatter.png>] (./Q4_output/Q4-swit.txt [34])
-<Q4_pics/Swit-Histgram.png, id=1272, 454.69875pt x 468.24937pt>
+l.505 \newpage
+               <./Q4_pics/Clev-scatter.png>] (./Q4_output/Q4-hung.txt [36])
+<Q4_pics/Hung-Histgram.png, id=1246, 470.50781pt x 467.49657pt>
+File: Q4_pics/Hung-Histgram.png Graphic file (type png)
+
+<use Q4_pics/Hung-Histgram.png>
+Package pdftex.def Info: Q4_pics/Hung-Histgram.png used on input line 512.
+(pdftex.def)             Requested size: 341.43306pt x 339.2509pt.
+
+<Q4_pics/Hung-scatter.png, id=1247, 484.05844pt x 484.81125pt>
+File: Q4_pics/Hung-scatter.png Graphic file (type png)
+
+<use Q4_pics/Hung-scatter.png>
+Package pdftex.def Info: Q4_pics/Hung-scatter.png used on input line 520.
+(pdftex.def)             Requested size: 341.43306pt x 341.97691pt.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.525 
+       <./Q4_pics/Hung-Histgram.png>] [38pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.12}) has been already used, duplicate ignore
+d
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.526 \newpage
+               <./Q4_pics/Hung-scatter.png>] (./Q4_output/Q4-long.txt [39])
+<Q4_pics/Long-Histgram.png, id=1345, 464.4853pt x 465.99094pt>
+File: Q4_pics/Long-Histgram.png Graphic file (type png)
+
+<use Q4_pics/Long-Histgram.png>
+Package pdftex.def Info: Q4_pics/Long-Histgram.png used on input line 533.
+(pdftex.def)             Requested size: 341.43306pt x 342.54544pt.
+ [40]
+<Q4_pics/Long-scatter.png, id=1393, 478.03593pt x 476.53032pt>
+File: Q4_pics/Long-scatter.png Graphic file (type png)
+
+<use Q4_pics/Long-scatter.png>
+Package pdftex.def Info: Q4_pics/Long-scatter.png used on input line 541.
+(pdftex.def)             Requested size: 341.43306pt x 340.35303pt.
+ [41pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.546 
+       <./Q4_pics/Long-Histgram.png>] [42pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.14}) has been already used, duplicate ignore
+d
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.547 \newpage
+               <./Q4_pics/Long-scatter.png>] (./Q4_output/Q4-swit.txt [43])
+<Q4_pics/Swit-Histgram.png, id=1469, 454.69875pt x 468.24937pt>
 File: Q4_pics/Swit-Histgram.png Graphic file (type png)
 
 <use Q4_pics/Swit-Histgram.png>
-Package pdftex.def Info: Q4_pics/Swit-Histgram.png used on input line 385.
+Package pdftex.def Info: Q4_pics/Swit-Histgram.png used on input line 554.
 (pdftex.def)             Requested size: 341.43306pt x 351.61485pt.
 
-<Q4_pics/Swit-scatter.png, id=1273, 478.03593pt x 484.05844pt>
+<Q4_pics/Swit-scatter.png, id=1470, 478.03593pt x 484.05844pt>
 File: Q4_pics/Swit-scatter.png Graphic file (type png)
 
 <use Q4_pics/Swit-scatter.png>
-Package pdftex.def Info: Q4_pics/Swit-scatter.png used on input line 393.
+Package pdftex.def Info: Q4_pics/Swit-scatter.png used on input line 562.
 (pdftex.def)             Requested size: 341.43306pt x 345.72984pt.
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.15
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 
+l.567 
        <./Q4_pics/Swit-Histgram.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
- [36pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.16
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.401 \end{document}
+l.570 \end{document}
                      <./Q4_pics/Swit-scatter.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 11CEAF1DDA5C7F9B1632347C6A627F6F;1000.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
+(rerunfilecheck)             Checksum: A8F49F776853D2E1FDFFFE3274DAD3C4;1175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
  ) 
 Here is how much of TeX's memory you used:
- 8956 strings out of 493054
- 131633 string characters out of 6136542
- 326366 words of memory out of 5000000
- 11228 multiletter control sequences out of 15000+600000
- 11849 words of font info for 46 fonts, out of 8000000 for 9000
+ 18509 strings out of 493027
+ 346729 string characters out of 6135876
+ 481848 words of memory out of 5000000
+ 20571 multiletter control sequences out of 15000+600000
+ 15284 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,6n,32p,292b,1631s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:
-/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/dev/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/dev/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/dev/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/dev/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/dev/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/dev/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (36 pages, 412211 bytes).
+ 34i,7n,42p,10359b,2023s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c
+:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/dev
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/dev/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/dev/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/dev/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/dev/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/dev/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/dev/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr5.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (45 pages, 518187 bytes).
 PDF statistics:
- 1554 PDF objects out of 1728 (max. 8388607)
- 1469 compressed objects within 15 object streams
- 1067 named destinations out of 1200 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1803 PDF objects out of 2073 (max. 8388607)
+ 1692 compressed objects within 17 object streams
+ 1212 named destinations out of 1440 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
