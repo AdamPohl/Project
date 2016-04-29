@@ -1,35 +1,45 @@
-# setwd("C:/Users/Timothy/Documents/GitHub/Project")
+## MA3505 - Multivariate Statistics Project 1
 
+## Importing Librays
+library(asbio)
 library(car)
+library(MASS)
 
+
+## Names of each variable
 names =  c("id", "ccf", "age", "sex", "painloc", "painexer", "relrest", "pncaden", "cp", "trestbps", "htn", "chol", "smoke", "cigs", "years", "fbs", "dm", "famhist", "restecg", "ekgmo", "ekgday", "ekgyr", "dig", "prop", "nitr", "pro", "diuretic", "proto", "thaldur", "thaltime", "met", "thalach", "thalrest", "tpeakbps", "tpeakbpd", "dummy", "trestbpd", "exang", "xhypo", "oldpeak", "slope", "rldv5", "rldv5e", "ca", "restckm", "exerckm", "restef", "restwm", "exeref", "exerwm", "thal", "thalsev", "thalpul", "earlobe", "cmo", "cday", "cyr", "num", "lmt", "ladprox", "laddist", "diag", "cxmain", "ramus", "om1", "om2", "rcaprox", "rcadist", "lvx1", "lvx2", "lvx3", "lvx4", "lvf", "cathef", "junk", "place")
 
+## Importing the datasets
 data1 <- scan(file="project_heart_cleveland.txt")
 mat1 <- matrix(data1, ncol=75, byrow=TRUE)
 datb1 <- data.frame(mat1)
 datb1 <- cbind(datb1, "cleveland")
 colnames(datb1) <- names
+cleveland.df <- datb1
 
 data2 <- scan(file="project_heart_hungarian.txt")
 mat2 <- matrix(data2, ncol=75, byrow=TRUE)
 datb2 <- data.frame(mat2)
 datb2 <- cbind(datb2, "hungarian")
 colnames(datb2) <- names
+hungary.df <- datb2
 
 data3 <- scan(file="project_heart_longbeachva.txt")
 mat3 <- matrix(data3, ncol=75, byrow=TRUE)
 datb3 <- data.frame(mat3)
 datb3 <- cbind(datb3, "longbeachva")
 colnames(datb3) <- names
+longbeach.df <- datb3
 
 data4 <- scan(file="project_heart_switzerland.txt")
 mat4 <- matrix(data4, ncol=75, byrow=TRUE)
 datb4 <- data.frame(mat4)
 datb4 <- cbind(datb4, "switzerland")
 colnames(datb4) <- names
+switzerland.df <-datb4
 
 datall = rbind(datb1, datb2, datb3, datb4)
-
+all.df <- datall
 
 # Function to find variabes that are missing at least the percent data given
 navariables <- function(dataset, percent) {
@@ -86,12 +96,96 @@ removenaandconstvar <- function(dataset, x) {
 }
 
 
+#### Exploratory Data Analysis ####
+
+
+dim(cleveland.df)
+## dim 282 76
+dim(hungary.df)
+#dim 294 76
+dim(switzerland.df)
+## 123 76
+dim(longbeach.df)
+## 200 76
+dim(all.df)
+## 899 76
+
+
+str(all.df)
+#### Read the summaries to get any useful information
+summary (all.df)
+summary (cleveland.df)
+summary (hungary.df)
+summary (switzerland.df)
+summary (longbeach.df)
+
+### Some different variables
+hungaryobs = subset(hungary.df, selec=c(age, sex,cp,trestbps, chol, fbs,
+                                        restecg, thalach, exang, oldpeak, num))
+swissobs = subset(switzerland.df, selec=c(age, sex,cp,trestbps, chol, fbs,
+                                          restecg, thalach, exang, oldpeak, num))
+longbeachobs = subset(longbeach.df, selec=c(age, sex,cp,trestbps, chol, fbs,
+                                            restecg, thalach, exang, oldpeak, num))
+clevelandobs = subset(cleveland.df, selec=c(age, sex,cp,trestbps, chol, fbs,
+                                            restecg, thalach, exang, oldpeak, num))
+allobs = subset(all.df, selec=c(age, sex,cp,trestbps, chol, fbs,
+                                restecg, thalach, exang, oldpeak, num))
+
+hungaryobscc=hungaryobs[complete.cases(hungaryobs),]
+longbeachobscc=longbeachobs[complete.cases(longbeachobs),]
+swissobscc=swissobs[complete.cases(swissobs),]
+clevelandobscc=clevelandobs[complete.cases(clevelandobs),]
+allobscc=allobs[complete.cases(allobs),]
+
+
+## correlation matrix
+sink("intro files/Intcormatrix.txt")
+cor(allobscc)
+sink()
+
+###Removing 0,1 variables
+allobs2 = subset(all.df, selec=c(age,cp,trestbps, chol,
+                                 thalach, oldpeak, num))
+allobs2cc=allobs2[complete.cases(allobs2),]
+hungaryobs2 = subset(hungary.df, selec=c(age,cp,trestbps, chol, thalach, oldpeak))
+swissobs2 = subset(switzerland.df, selec=c(age,cp,trestbps, chol, thalach, oldpeak))
+longbeachobs2 = subset(longbeach.df, selec=c(age,cp,trestbps, chol, thalach, oldpeak))
+clevelandobs2 = subset(cleveland.df, selec=c(age,cp,trestbps, chol, thalach, oldpeak))
+
+hungaryobs2cc=hungaryobs2[complete.cases(hungaryobs2),]
+longbeachobs2cc=longbeachobs2[complete.cases(longbeachobs2),]
+swissobs2cc=swissobs2[complete.cases(swissobs2),]
+clevelandobs2cc=clevelandobs2[complete.cases(clevelandobs2),]
+
+
+
+###large scattergraph
+pairs(allobs2cc[, 1:6])
+
+###Bivariate boxplots
+
+#all
+age <- as.vector(allobs2cc[,1])
+chol <- as.vector(allobs2cc[,4])
+thalech <- as.vector(allobs2cc[,5])
+oldpeak <- as.vector(allobs2cc[,6])
+
+png(filename="intro files/intplot3.png")
+bv.boxplot(age, chol, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="chol")
+dev.off()
+png(filename="intro files/intplot4.png")
+bv.boxplot(age, thalech, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="thalech")
+dev.off()
+png(filename="intro files/intplot5.png")
+bv.boxplot(age,oldpeak, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="oldpeak")
+dev.off()
+
+
 #### Question 1 ####
 
 
 
 #### Question 2 ####
-library(car)
 model2 = lm(cbind(chol, thaldur, thaltime, met, thalach, thalrest, tpeakbps, tpeakbpd, trestbpd, oldpeak, rldv5, rldv5e) ~ proto + restecg + dig + prop + nitr + pro + diuretic, data=datall)
 # summary(model2)
 # model2
@@ -173,7 +267,6 @@ ex3pcaswi <- princomp(ex3datswi[,!colnames(ex3datswi) %in% "num"], cor=TRUE)
 # dev.off()
 
 #### Question 4 ####
-library(MASS)
 
 ## Clevland model ##
 clevdata <- subset(ex3datcle, select = c(-lmt))
