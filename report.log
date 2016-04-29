@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.4.28)  29 APR 2016 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.4.28)  29 APR 2016 10:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1259,7 +1259,7 @@ Package epstopdf Info: Source file: <question3output/clescreeplot.eps>
 (epstopdf)                    size: 12303 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/clescreepl
 ot-eps-converted-to.pdf question3output/clescreeplot.eps>
-(epstopdf)             \includegraphics on input line 345.
+(epstopdf)             \includegraphics on input line 347.
 Package epstopdf Info: Output file is already uptodate.
 
 <question3output/clescreeplot-eps-converted-to.pdf, id=691, 433.62pt x 289.08pt
@@ -1268,7 +1268,7 @@ File: question3output/clescreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/clescreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/clescreeplot-eps-converted-to.pdf used
- on input line 345.
+ on input line 347.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
 
 (./question3output/clepcaloadings.txt [23pdfTeX warning (ext4): destination wit
@@ -1277,10 +1277,10 @@ h the same identifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5 cp 
-              0.208                                            0.384        ...
- <./question3output/clescreeplot-eps-converted-to.pdf>])
-(./question3output/hunvif.txt [24])
+l.2          Comp.
+                  1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8 Comp.9 ...
+ <./question3output/clescreeplot-eps-converted-to.pdf>]) [24]
+(./question3output/hunvif.txt)
 Package epstopdf Info: Source file: <question3output/hunscreeplot.eps>
 (epstopdf)                    date: 2016-04-27 16:02:56
 (epstopdf)                    size: 7447 bytes
@@ -1290,7 +1290,7 @@ Package epstopdf Info: Source file: <question3output/hunscreeplot.eps>
 (epstopdf)                    size: 12301 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/hunscreepl
 ot-eps-converted-to.pdf question3output/hunscreeplot.eps>
-(epstopdf)             \includegraphics on input line 379.
+(epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
 <question3output/hunscreeplot-eps-converted-to.pdf, id=773, 433.62pt x 289.08pt
@@ -1299,7 +1299,7 @@ File: question3output/hunscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/hunscreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/hunscreeplot-eps-converted-to.pdf used
- on input line 379.
+ on input line 381.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
 
 (./question3output/hunpcaloadings.txt [25pdfTeX warning (ext4): destination wit
@@ -1308,8 +1308,8 @@ h the same identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.20 diuretic 
-                             0.129 -0.101  0.149         0.275  0.123  0.377...
+l.16 ekgyr 
+               0.126 -0.312  0.189               -0.181  0.237         0.101...
  <./question3output/hunscreeplot-eps-converted-to.pdf>])
 (./question3output/lonvif.txt)
 Package epstopdf Info: Source file: <question3output/lonscreeplot.eps>
@@ -1321,16 +1321,16 @@ Package epstopdf Info: Source file: <question3output/lonscreeplot.eps>
 (epstopdf)                    size: 12413 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/lonscreepl
 ot-eps-converted-to.pdf question3output/lonscreeplot.eps>
-(epstopdf)             \includegraphics on input line 413.
+(epstopdf)             \includegraphics on input line 415.
 Package epstopdf Info: Output file is already uptodate.
 
-<question3output/lonscreeplot-eps-converted-to.pdf, id=823, 433.62pt x 289.08pt
+<question3output/lonscreeplot-eps-converted-to.pdf, id=818, 433.62pt x 289.08pt
 >
 File: question3output/lonscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/lonscreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/lonscreeplot-eps-converted-to.pdf used
- on input line 413.
+ on input line 415.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
  [26]
 (./question3output/lonpcaloadings.txt [27pdfTeX warning (ext4): destination wit
@@ -1352,7 +1352,7 @@ Package epstopdf Info: Source file: <question3output/swiscreeplot.eps>
 (epstopdf)                    size: 12194 bytes
 (epstopdf)             Command: <repstopdf --outfile=question3output/swiscreepl
 ot-eps-converted-to.pdf question3output/swiscreeplot.eps>
-(epstopdf)             \includegraphics on input line 457.
+(epstopdf)             \includegraphics on input line 459.
 Package epstopdf Info: Output file is already uptodate.
 
 <question3output/swiscreeplot-eps-converted-to.pdf, id=978, 433.62pt x 289.08pt
@@ -1361,7 +1361,7 @@ File: question3output/swiscreeplot-eps-converted-to.pdf Graphic file (type pdf)
 
  <use question3output/swiscreeplot-eps-converted-to.pdf>
 Package pdftex.def Info: question3output/swiscreeplot-eps-converted-to.pdf used
- on input line 457.
+ on input line 459.
 (pdftex.def)             Requested size: 341.43306pt x 227.63405pt.
  [29]
 (./question3output/swipcaloadings.txt [30pdfTeX warning (ext4): destination wit
@@ -1378,123 +1378,123 @@ l.35 cxmain
 File: Q4_pics/Clev-Histgram.png Graphic file (type png)
 
 <use Q4_pics/Clev-Histgram.png>
-Package pdftex.def Info: Q4_pics/Clev-Histgram.png used on input line 491.
+Package pdftex.def Info: Q4_pics/Clev-Histgram.png used on input line 493.
 (pdftex.def)             Requested size: 341.43306pt x 345.24039pt.
  [33]
 <Q4_pics/Clev-scatter.png, id=1171, 485.56406pt x 487.8225pt>
 File: Q4_pics/Clev-scatter.png Graphic file (type png)
 
 <use Q4_pics/Clev-scatter.png>
-Package pdftex.def Info: Q4_pics/Clev-scatter.png used on input line 499.
+Package pdftex.def Info: Q4_pics/Clev-scatter.png used on input line 501.
 (pdftex.def)             Requested size: 341.43306pt x 343.01424pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.504 
+l.506 
        <./Q4_pics/Clev-Histgram.png>] [35pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.10}) has been already used, duplicate ignore
 d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.505 \newpage
+l.507 \newpage
                <./Q4_pics/Clev-scatter.png>] (./Q4_output/Q4-hung.txt [36])
 <Q4_pics/Hung-Histgram.png, id=1246, 470.50781pt x 467.49657pt>
 File: Q4_pics/Hung-Histgram.png Graphic file (type png)
 
 <use Q4_pics/Hung-Histgram.png>
-Package pdftex.def Info: Q4_pics/Hung-Histgram.png used on input line 512.
+Package pdftex.def Info: Q4_pics/Hung-Histgram.png used on input line 514.
 (pdftex.def)             Requested size: 341.43306pt x 339.2509pt.
 
 <Q4_pics/Hung-scatter.png, id=1247, 484.05844pt x 484.81125pt>
 File: Q4_pics/Hung-scatter.png Graphic file (type png)
 
 <use Q4_pics/Hung-scatter.png>
-Package pdftex.def Info: Q4_pics/Hung-scatter.png used on input line 520.
+Package pdftex.def Info: Q4_pics/Hung-scatter.png used on input line 522.
 (pdftex.def)             Requested size: 341.43306pt x 341.97691pt.
  [37pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.525 
+l.527 
        <./Q4_pics/Hung-Histgram.png>] [38pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.12}) has been already used, duplicate ignore
 d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.526 \newpage
+l.528 \newpage
                <./Q4_pics/Hung-scatter.png>] (./Q4_output/Q4-long.txt [39])
 <Q4_pics/Long-Histgram.png, id=1345, 464.4853pt x 465.99094pt>
 File: Q4_pics/Long-Histgram.png Graphic file (type png)
 
 <use Q4_pics/Long-Histgram.png>
-Package pdftex.def Info: Q4_pics/Long-Histgram.png used on input line 533.
+Package pdftex.def Info: Q4_pics/Long-Histgram.png used on input line 535.
 (pdftex.def)             Requested size: 341.43306pt x 342.54544pt.
  [40]
 <Q4_pics/Long-scatter.png, id=1393, 478.03593pt x 476.53032pt>
 File: Q4_pics/Long-scatter.png Graphic file (type png)
 
 <use Q4_pics/Long-scatter.png>
-Package pdftex.def Info: Q4_pics/Long-scatter.png used on input line 541.
+Package pdftex.def Info: Q4_pics/Long-scatter.png used on input line 543.
 (pdftex.def)             Requested size: 341.43306pt x 340.35303pt.
  [41pdfTeX warning (ext4): destination with the same identifier (name{figure.13
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.546 
+l.548 
        <./Q4_pics/Long-Histgram.png>] [42pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.14}) has been already used, duplicate ignore
 d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.547 \newpage
+l.549 \newpage
                <./Q4_pics/Long-scatter.png>] (./Q4_output/Q4-swit.txt [43])
 <Q4_pics/Swit-Histgram.png, id=1469, 454.69875pt x 468.24937pt>
 File: Q4_pics/Swit-Histgram.png Graphic file (type png)
 
 <use Q4_pics/Swit-Histgram.png>
-Package pdftex.def Info: Q4_pics/Swit-Histgram.png used on input line 554.
+Package pdftex.def Info: Q4_pics/Swit-Histgram.png used on input line 556.
 (pdftex.def)             Requested size: 341.43306pt x 351.61485pt.
 
 <Q4_pics/Swit-scatter.png, id=1470, 478.03593pt x 484.05844pt>
 File: Q4_pics/Swit-scatter.png Graphic file (type png)
 
 <use Q4_pics/Swit-scatter.png>
-Package pdftex.def Info: Q4_pics/Swit-scatter.png used on input line 562.
+Package pdftex.def Info: Q4_pics/Swit-scatter.png used on input line 564.
 (pdftex.def)             Requested size: 341.43306pt x 345.72984pt.
  [44pdfTeX warning (ext4): destination with the same identifier (name{figure.15
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.567 
+l.569 
        <./Q4_pics/Swit-Histgram.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
  [45pdfTeX warning (ext4): destination with the same identifier (name{figure.16
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.570 \end{document}
+l.572 \end{document}
                      <./Q4_pics/Swit-scatter.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A8F49F776853D2E1FDFFFE3274DAD3C4;1175.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 572.
  ) 
 Here is how much of TeX's memory you used:
  18509 strings out of 493027
  346729 string characters out of 6135876
- 481848 words of memory out of 5000000
+ 482848 words of memory out of 5000000
  20571 multiletter control sequences out of 15000+600000
  15284 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1513,7 +1513,7 @@ public/amsfonts/cm/cmr17.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public
 ts/cm/cmr7.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb><c:/dev/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (45 pages, 518187 bytes).
+Output written on report.pdf (45 pages, 518358 bytes).
 PDF statistics:
  1803 PDF objects out of 2073 (max. 8388607)
  1692 compressed objects within 17 object streams
