@@ -295,84 +295,100 @@ james(proto4[, 2:9], proto5[, 2:9], R=2)
 
 #### Question 2 ####
 model2 = lm(cbind(chol, thaldur, thaltime, met, thalach, thalrest, tpeakbps, tpeakbpd, trestbpd, oldpeak, rldv5, rldv5e) ~ proto + restecg + dig + prop + nitr + pro + diuretic, data=datall)
-# summary(model2)
+summary(model2)
 # model2
 
 #### Question 3 ####
 
 ## Cleveland data
+# Removing variables
 ex3datcle <- removenaandconstvar(datb1, .9)
 
+# Building model
 ex3modcle <- lm(num ~ ., data = ex3datcle)
 
-# vif(ex3modcle)
+vif(ex3modcle)
 
+# Running PCA
 ex3pcacle <- princomp(ex3datcle[,!colnames(ex3datcle) %in% "num"], cor=TRUE)
 
-# summary(ex3pcacle, loadings = TRUE)
+summary(ex3pcacle, loadings = TRUE)
 
-# postscript("question3output/clescreeplot.eps", width = 6, height = 4,
-#            horizontal = FALSE, onefile = FALSE, paper = "special")
-# plot(ex3pcacle$sd, type="l", xlab = "Component Number",
-#      ylab = "Eigenvalues", main = "Scree plot - Cleveland")
-# abline(v = 6, col = "purple", lty = 2)
-# dev.off()
+# Plotting Scree plot
+postscript("question3output/clescreeplot.eps", width = 6, height = 4,
+           horizontal = FALSE, onefile = FALSE, paper = "special")
+plot(ex3pcacle$sd, type="l", xlab = "Component Number",
+     ylab = "Eigenvalues", main = "Scree plot - Cleveland")
+abline(v = 6, col = "purple", lty = 2)
+dev.off()
 
 
 ## Hungarian data
+# Removing variables
 ex3dathun <- removenaandconstvar(datb2, .79)
 
+# Building model
 ex3modhun <- lm(num ~ ., data = ex3dathun)
 
-# vif(ex3modhun)
+vif(ex3modhun)
 
+# Running PCA
 ex3pcahun <- princomp(ex3dathun[,!colnames(ex3dathun) %in% "num"], cor=TRUE)
 
-# summary(ex3pcahun, loadings = TRUE)
+summary(ex3pcahun, loadings = TRUE)
 
-# postscript("question3output/hunscreeplot.eps", width = 6, height = 4,
-#            horizontal = FALSE, onefile = FALSE, paper = "special")
-# plot(ex3pcahun$sd, type="l", xlab = "Component Number",
-#      ylab = "Eigenvalues", main = "Scree plot - Hungary")
-# abline(v = 6, col = "purple", lty = 2)
-# dev.off()
+# Plotting Scree plot
+postscript("question3output/hunscreeplot.eps", width = 6, height = 4,
+           horizontal = FALSE, onefile = FALSE, paper = "special")
+plot(ex3pcahun$sd, type="l", xlab = "Component Number",
+     ylab = "Eigenvalues", main = "Scree plot - Hungary")
+abline(v = 6, col = "purple", lty = 2)
+dev.off()
 
 
 ## Longbeachva
+# Removing variables
 ex3datlon <- removenaandconstvar(datb3, .50)
 
+# Building model
 ex3modlon <- lm(num ~ ., data = ex3datlon)
 
-# vif(ex3modlon)
+vif(ex3modlon)
 
+# Running PCA
 ex3pcalon <- princomp(ex3datlon[,!colnames(ex3datlon) %in% "num"], cor=TRUE)
 
-# summary(ex3pcalon, loadings = TRUE)
+summary(ex3pcalon, loadings = TRUE)
 
-# postscript("question3output/lonscreeplot.eps", width = 6, height = 4,
-#            horizontal = FALSE, onefile = FALSE, paper = "special")
-# plot(ex3pcalon$sd, type="l", xlab = "Component Number",
-#      ylab = "Eigenvalues", main = "Scree plot - Longbeach")
-# abline(v = 11, col = "purple", lty = 2)
-# dev.off()
+# Plotting Scree plot
+postscript("question3output/lonscreeplot.eps", width = 6, height = 4,
+           horizontal = FALSE, onefile = FALSE, paper = "special")
+plot(ex3pcalon$sd, type="l", xlab = "Component Number",
+     ylab = "Eigenvalues", main = "Scree plot - Longbeach")
+abline(v = 11, col = "purple", lty = 2)
+dev.off()
 
 ## Switzerland data
+# Removing variables
 ex3datswi <- removenaandconstvar(datb4, .13)
 
+# Building model
 ex3modswi <- lm(num ~ ., data = ex3datswi)
 
-# vif(ex3modswi)
+vif(ex3modswi)
 
+# Running PCA
 ex3pcaswi <- princomp(ex3datswi[,!colnames(ex3datswi) %in% "num"], cor=TRUE)
 
-# summary(ex3pcaswi, loadings = TRUE)
+summary(ex3pcaswi, loadings = TRUE)
 
-# postscript("question3output/swiscreeplot.eps", width = 6, height = 4,
-#            horizontal = FALSE, onefile = FALSE, paper = "special")
-# plot(ex3pcaswi$sd, type="l", xlab = "Component Number",
-#      ylab = "Eigenvalues", main = "Scree plot - Switzerland")
-# abline(v = 5, col = "purple", lty = 2)
-# dev.off()
+# Plotting Scree plot
+postscript("question3output/swiscreeplot.eps", width = 6, height = 4,
+           horizontal = FALSE, onefile = FALSE, paper = "special")
+plot(ex3pcaswi$sd, type="l", xlab = "Component Number",
+     ylab = "Eigenvalues", main = "Scree plot - Switzerland")
+abline(v = 5, col = "purple", lty = 2)
+dev.off()
 
 #### Question 4 ####
 
