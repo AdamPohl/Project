@@ -19,7 +19,80 @@
 
 
 \section{Introduction and exploratory data analysis for the variables.}
+The heart disease data set is a study into heart disease diagnoses from four different locations:
+\begin{enumerate}
+\item Cleveland
+\item Hungary
+\item Long Beach
+\item Switzerland\\
+\end{enumerate}
 
+In this report we will be looking at how the means of certain variables are affected by exercise protocols; multivariate regression to estimate the coefficients for regressing variables against each other; dimension reduction  see which of the variables affect the diagnosis of the heart disease and  discriminant analysis/classification tools to distinguish patients based on their disease.
+
+Each data set has 75 variables (76 as an indicator variable is added to tell the location) and all are numerical. Each location has the following amount of observations:
+\begin{enumerate}
+\item 282
+\item 294
+\item 200
+\item 123
+\end{enumerate}
+Which gives a total of 899 observations overall.\\
+Using the \textbf{\textit{summary()}} function on each loction firstly all were missing the variables \textbf{pncaden, restckm, exerckm, restef, restwm, exeref, exerwm, earlobe.}
+
+For the exploratory data analysis I will be looking at the following variables:
+\begin{itemize}
+\item \textbf{age
+\item sex
+\item cp
+\item trestbps
+\item chol
+\item fbs
+\item restecg
+\item thalech
+\item exang
+\item oldpeak
+\item slope
+\item num}
+\newpage
+\end{itemize}
+
+First we see the correlation matrix for these variables for the whole data set.
+\lstinputlisting[frame=single]{Intcormatrix.txt}
+
+We can see hear that there are no highly correlated variables, naturally one would think age would have an effect on some of the variables.Below shows a large scatterplot matrix for 6 variables that take on more than 2 values.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{intplot2}
+	\end{center}
+	\caption{Scatterplot matrix}
+\end{figure}
+
+To show what the data looks like further below shows bivariate boxplots of \textbf{age} plotted against \textbf{chol}(cholestrol) and \textbf{thalech}(maximum heart rate achieved).
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{intplot3}
+	\end{center}
+	\caption{Bivariate boxplot: Age against Chol}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{intplot4}
+	\end{center}
+	\caption{Bivariate boxplot: Age against thalech}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=12cm]{intplot5}
+	\end{center}
+	\caption{Bivariate boxplot: Age against Oldpeak}
+\end{figure}
+
+
+In the next chapter we can find out how the variables relate to each other in more detail.
 
 \section{Analysis to answer each research question}
 
