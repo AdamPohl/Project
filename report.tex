@@ -10,6 +10,7 @@
 \usepackage{epsf}
 \usepackage{float}
 \usepackage{siunitx}
+\usepackage{subcaption}
 
 \title{MA3505 Multivariate Statistics Project 1}
 \date{\today}
@@ -19,7 +20,8 @@
 
 
 \section{Introduction and exploratory data analysis for the variables.}
-The heart disease data set is a study into heart disease diagnoses from four different locations:
+The heart disease data set is a study into heart disease diagnoses from four
+different locations:
 \begin{enumerate}
 \item Cleveland
 \item Hungary
@@ -27,9 +29,16 @@ The heart disease data set is a study into heart disease diagnoses from four dif
 \item Switzerland\\
 \end{enumerate}
 
-In this report we will be looking at how the means of certain variables are affected by exercise protocols; multivariate regression to estimate the coefficients for regressing variables against each other; dimension reduction  see which of the variables affect the diagnosis of the heart disease and  discriminant analysis/classification tools to distinguish patients based on their disease.
+In this report we will be looking at how the means of certain variables are
+affected by exercise protocols; multivariate regression to estimate the
+coefficients for regressing variables against each other; dimension reduction
+see which of the variables affect the diagnosis of the heart disease and
+discriminant analysis/classification tools to distinguish patients based on
+their disease.
 
-Each data set has 75 variables (76 as an indicator variable is added to tell the location) and all are numerical. Each location has the following amount of observations:
+Each data set has 75 variables (76 as an indicator variable is added to tell the
+location) and all are numerical. Each location has the following amount of
+observations:
 \begin{enumerate}
 \item 282
 \item 294
@@ -37,67 +46,78 @@ Each data set has 75 variables (76 as an indicator variable is added to tell the
 \item 123
 \end{enumerate}
 Which gives a total of 899 observations overall.\\
-Using the \textbf{\textit{summary()}} function on each loction firstly all were missing the variables \textbf{pncaden, restckm, exerckm, restef, restwm, exeref, exerwm, earlobe.}
+Using the \textbf{\textit{summary()}} function on each loction firstly all were
+missing the variables \textbf{pncaden, restckm, exerckm, restef, restwm, exeref,
+exerwm, earlobe.}
 
 For the exploratory data analysis I will be looking at the following variables:
 \begin{itemize}
-\item \textbf{age
-\item sex
-\item cp
-\item trestbps
-\item chol
-\item fbs
-\item restecg
-\item thalech
-\item exang
-\item oldpeak
-\item slope
-\item num}
-\newpage
+	\item \textbf{age
+	\item sex
+	\item cp
+	\item trestbps
+	\item chol
+	\item fbs
+	\item restecg
+	\item thalech
+	\item exang
+	\item oldpeak
+	\item slope
+	\item num}
 \end{itemize}
+\newpage
 
 First we see the correlation matrix for these variables for the whole data set.
 \lstinputlisting[frame=single]{"intro files/Intcormatrix.txt"}
 
-We can see hear that there are no highly correlated variables, naturally one would think age would have an effect on some of the variables.Below shows a large scatterplot matrix for 6 variables that take on more than 2 values.
+We can see hear that there are no highly correlated variables, naturally one
+would think age would have an effect on some of the variables.Below shows a
+large scatterplot matrix for 6 variables that take on more than 2 values.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{"intro files"/intplot2.png}
+		\includegraphics[width=12cm]{intro files/intplot2.png}
 	\end{center}
 	\caption{Scatterplot matrix}
 \end{figure}
 
-To show what the data looks like further below shows bivariate boxplots of \textbf{age} plotted against \textbf{chol}(cholestrol) and \textbf{thalech}(maximum heart rate achieved).
+To show what the data looks like further below shows bivariate boxplots of
+\textbf{age} plotted against \textbf{chol}(cholestrol) and
+\textbf{thalech}(maximum heart rate achieved).
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{"intro files"/intplot3.png}
+		\includegraphics[width=12cm]{intro files/intplot3.png}
 	\end{center}
 	\caption{Bivariate boxplot: Age against Chol}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{"intro files"/intplot4.png}
+		\includegraphics[width=12cm]{intro files/intplot4.png}
 	\end{center}
 	\caption{Bivariate boxplot: Age against thalech}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=12cm]{"intro files"/intplot5.png}
+		\includegraphics[width=12cm]{intro files/intplot5.png}
 	\end{center}
 	\caption{Bivariate boxplot: Age against Oldpeak}
 \end{figure}
 
 
-In the next chapter we can find out how the variables relate to each other in more detail.
+In the next chapter we can find out how the variables relate to each other in
+more detail.
 
 \section{Analysis to answer each research question}
 
 \subsection{Question 1}
-For this question since Cleveland and Switzerland only used one exercise protocol each rather than looking at the four data sets separately, it was looked at as one data set.Also, it appeared that the protocol values for Hungary did not match the description in the brief therefore the values were changed to:\\
+For this question since Cleveland and Switzerland only used one exercise
+protocol each rather than looking at the four data sets separately, it was
+looked at as one data set.Also, it appeared that the protocol values for Hungary
+did not match the description in the brief therefore the values were changed
+to:\\
 \centerline{150 = 7,}\\
 \centerline{100 = 9,}\\
 \centerline{50 = 11,}\\
@@ -107,16 +127,23 @@ For this question since Cleveland and Switzerland only used one exercise protoco
 \centerline{75 = 10,}\\
 \centerline{130 = 8,}\\
 \centerline{200 = NA.}\\
-Each variable was assigned the number that represented the value to the nearest 25.
+Each variable was assigned the number that represented the value to the nearest
+25.
 
-Next I created a subset of the data set with just the required variables, the variables rldv5, rldv5e and met were removed as the first had no values for Cleveland and Switzerland and the latter two had most values missing for Switzerland. So the code for the subset was
+Next I created a subset of the data set with just the required variables, the
+variables rldv5, rldv5e and met were removed as the first had no values for
+Cleveland and Switzerland and the latter two had most values missing for
+Switzerland. So the code for the subset was
 \begin{lstlisting}[frame=single]
 allproto1 = subset(all.df, select=c(proto,chol,
 thaldur, thaltime, thalach, thalrest, tpeakbps, tpeakbpd, trestbpd,
 oldpeak, indictor))
 \end{lstlisting}
 
-While running a couple of preliminary tests a lot of errors were occurring, therefore checking through each exercise protocol, protocols 4,6 and 7 had very few observations and protocol 12 had dependent columns, thus they were removed from the test.
+While running a couple of preliminary tests a lot of errors were occurring,
+therefore checking through each exercise protocol, protocols 4,6 and 7 had very
+few observations and protocol 12 had dependent columns, thus they were removed
+from the test.
 
 So that the tests would run the protocol classes will be renamed to:\\
 \centerline{8 = 2,}\\
@@ -126,7 +153,8 @@ So that the tests would run the protocol classes will be renamed to:\\
 
 \newpage
 \subsubsection{Comparison of covariance matrices}
-To compute the mean tests first need to compute a hypotheses test to test equality of covariance matrices.For each we are testing\\ 
+To compute the mean tests first need to compute a hypotheses test to test
+equality of covariance matrices.For each we are testing\\
 \centerline{ $H_0 : \Sigma_A = \Sigma_{p_i}$ $vs$ $H_A $ $: not$  $H_0$}\\
 The tests give the following output
 
@@ -135,53 +163,61 @@ The tests give the following output
 \underline{\textit{Exercise protocol 1(Bruce)}}\\
 p-value: $< \num{2.2e-16}$\\
 Decision: Reject the null\\
-Conclusion: There is statistical significant evidence covariance matrices 
+Conclusion: There is statistical significant evidence covariance matrices
 are differen.\\
 
 \lstinputlisting[frame=single]{"Q1 txt files/box2.txt"}
 \underline{\textit{Exercise protocol 2(8)(bike 125 kpa min/min)}}\\
 p-value: $< \num{0.0001247}$\\
 Decision: Reject the null\\
-Conclusion: There is statistical significant evidence covariance matrices 
+Conclusion: There is statistical significant evidence covariance matrices
 are different.\\
 
 \lstinputlisting[frame=single]{"Q1 txt files/box3.txt"}
 \underline{\textit{Exercise protocol 3(9)(bike 100 kpa min/min)}}\\
 p-value: $< \num{6.739e-05}$\\
 Decision: Reject the null\\
-Conclusion: There is statistical significant evidence covariance matrices 
+Conclusion: There is statistical significant evidence covariance matrices
 are different.\\
 
 \lstinputlisting[frame=single]{"Q1 txt files/box4.txt"}
 \underline{\textit{Exercise protocol 4(10)(bike 75 kpa min/min)}}\\
 p-value: $< \num{2.2e-16}$\\
 Decision: Reject the null\\
-Conclusion: There is statistical significant evidence covariance matrices 
+Conclusion: There is statistical significant evidence covariance matrices
 are different.\\
 
-\newpage  
+\newpage
 \lstinputlisting[frame=single]{"Q1 txt files/box5.txt"}
 \underline{\textit{Exercise protocol 5(10)(bike 50
 kpa min/min)}}\\
 p-value: $< \num{2.2e-16}$\\
 Decision: Reject the null\\
-Conclusion: There is statistical significant evidence covariance matrices 
+Conclusion: There is statistical significant evidence covariance matrices
 are different.\\
 
-All tests we reject the null so for the equality of mean tests we can use the James test.
+All tests we reject the null so for the equality of mean tests we can use the
+James test.
 
 \subsubsection{Equality of mean tests}
 
 Running the Multivariate James returns:
 \lstinputlisting[frame=single]{"Q1 txt files/Q1-Maovjames.txt"}
-$H_0 : \mu_{p_1} = \mu_{p_2} = \mu_{p_3} = \mu_{p_4}  = \mu_{p_5}$ $vs$ $H_A :$ $not$ $H_0$\\
+$H_0 : \mu_{p_1} = \mu_{p_2} = \mu_{p_3} = \mu_{p_4}  = \mu_{p_5}$ $vs$ $H_A :$
+$not$ $H_0$\\
 p-value: $< \num{0}$\\
 Decision: Reject the null\\
-Conclusion: There is statistical significant evidence that the mean for each exercise protocol is different.\\
+Conclusion: There is statistical significant evidence that the mean for each
+exercise protocol is different.\\
 \newpage
 
-To take a closer look, I conducted some two sample James tests to see if the means for any of the exercise protocols were equal. 
-From the results we see that again there is statistical significant evidence that no means are equal to each other but what is interesting to see firstly for the James test R =1 all tests had a zero p-value other than the protocols 2 and 3, and 3 and 4, (tests shown below). This is not surprising as these are the protocols performed on bikes (with the highest kpa's). 
+To take a closer look, I conducted some two sample James tests to see if the
+means for any of the exercise protocols were equal.
+From the results we see that again there is statistical significant evidence
+that no means are equal to each other but what is interesting to see firstly for
+the James test R =1 all tests had a zero p-value other than the protocols 2 and
+3, and 3 and 4, (tests shown below). This is not surprising as these are the
+protocols performed on bikes (with the highest kpa's).
 \lstinputlisting[frame=single]{"Q1 txt files/Q1-james1.txt"}
 $H_0 : \mu_{p_2} = \mu_{p_3}$ $vs$ $H_A :$ $not$ $H_0$\\
 
@@ -189,7 +225,9 @@ $H_0 : \mu_{p_2} = \mu_{p_3}$ $vs$ $H_A :$ $not$ $H_0$\\
 \lstinputlisting[frame=single]{"Q1 txt files/Q1-james2.txt"}
 $H_0 : \mu_{p_3} = \mu_{p_4}$ $vs$ $H_A :$ $not$ $H_0$\\
 
-Finally, when conducting the R = 2 James test again all tests had p-value's that give evidence to reject the null but testing betweens protocols 1 and 5 gave an answer of zero.
+Finally, when conducting the R = 2 James test again all tests had p-value's that
+give evidence to reject the null but testing betweens protocols 1 and 5 gave an
+answer of zero.
 \lstinputlisting[frame=single]{"Q1 txt files/Q1-james3.txt"}
 $H_0 : \mu_{p_1} = \mu_{p_5}$ $vs$ $H_A :$ $not$ $H_0$\\
 
@@ -328,19 +366,30 @@ working out what the values of the variables will be.
 \newpage
 \subsection{Question 3}
 
-Due to that each dataset is missing different variables from the data, we have decided that in order to maximise the amount of variables we have, we are going to be using each dataset independent of the others. 
+Due to that each dataset is missing different variables from the data, we have
+decided that in order to maximise the amount of variables we have, we are going
+to be using each dataset independent of the others.
 
-For each dataset we removed the dummy variables and variables that were missing at least a percentage of data. This percent was different for each data set and we were aiming for approximate at least double the number of observations to the number of variables. 
+For each dataset we removed the dummy variables and variables that were missing
+at least a percentage of data. This percent was different for each data set and
+we were aiming for approximate at least double the number of observations to the
+number of variables.
 
-In addition when listing the PCA loadings for each components, we have only included the listings that were required for identify the variables in the appropriate number of principle components. 
+In addition when listing the PCA loadings for each components, we have only
+included the listings that were required for identify the variables in the
+appropriate number of principle components.
 
 \subsubsection{Cleveland}
 
-After removing dummy variables and variables with at least $90\%$ NA data, we are left with 45 variables and 201 observations. 
+After removing dummy variables and variables with at least $90\%$ NA data, we
+are left with 45 variables and 201 observations.
 
-\lstinputlisting[frame=single, title={Cleveland variance inflation factor}]{question3output/clevif.txt}
+\lstinputlisting[frame=single, title={Cleveland variance inflation
+factor}]{question3output/clevif.txt}
 
-From the variance inflation factor we see the variables \textbf{ekgmo}, \textbf{ekgyr}, \textbf{cmo} and \textbf{cyr} are highly collinear with other variables in the model.
+From the variance inflation factor we see the variables \textbf{ekgmo},
+\textbf{ekgyr}, \textbf{cmo} and \textbf{cyr} are highly collinear with other
+variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -350,31 +399,44 @@ From the variance inflation factor we see the variables \textbf{ekgmo}, \textbf{
 	\label{q3-cle-screeplot}
 \end{figure}
 
-From the scree plot in Figure \ref{q3-cle-screeplot} we see that we keep 6 components.
+From the scree plot in Figure \ref{q3-cle-screeplot} we see that we keep 6
+components.
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single, title={Cleveland PCA loadings}]{question3output/clepcaloadings.txt}
+\lstinputlisting[frame=single, title={Cleveland PCA
+loadings}]{question3output/clepcaloadings.txt}
 
-We see that the first principle component is mostly formed of \textbf{thaldur}, \textbf{thalach}, \textbf{met} and \textbf{oldpeak} variables.
+We see that the first principle component is mostly formed of \textbf{thaldur},
+\textbf{thalach}, \textbf{met} and \textbf{oldpeak} variables.
 
-The second principle component is mostly formed of \textbf{cyr} and \textbf{ekgyr} variables.
+The second principle component is mostly formed of \textbf{cyr} and
+\textbf{ekgyr} variables.
 
-The third principle component is mostly formed of \textbf{tpeakbpd}, \textbf{trestbpd}, \textbf{sex} and \textbf{trestbps} variables.
+The third principle component is mostly formed of \textbf{tpeakbpd},
+\textbf{trestbpd}, \textbf{sex} and \textbf{trestbps} variables.
 
-The fourth principle component is mostly formed of \textbf{ekgmo} and \textbf{cmo} variables.
+The fourth principle component is mostly formed of \textbf{ekgmo} and
+\textbf{cmo} variables.
 
-The fifth principle component is mostly formed of \textbf{cday}, \textbf{ekgday}, \textbf{years} and \textbf{cigs} variables.
+The fifth principle component is mostly formed of \textbf{cday},
+\textbf{ekgday}, \textbf{years} and \textbf{cigs} variables.
 
-The sixth principle component is mostly formed of \textbf{diuretic}, \textbf{htn}, \textbf{ekgday}
+The sixth principle component is mostly formed of \textbf{diuretic},
+\textbf{htn}, \textbf{ekgday}
 
 \subsubsection{Hungary}
 
-After removing dummy variables and variables with at least $79\%$ NA data, we are left with 36 variables and 88 observations. 
+After removing dummy variables and variables with at least $79\%$ NA data, we
+are left with 36 variables and 88 observations.
 
-\lstinputlisting[frame=single, title={Hungary variance inflation factor}]{question3output/hunvif.txt}
+\lstinputlisting[frame=single, title={Hungary variance inflation
+factor}]{question3output/hunvif.txt}
 
-From the variance inflation factor we see that the variables \textbf{painexer}, \textbf{cp}, \textbf{ekgmo}, \textbf{ekgyr}, \textbf{proto}, \textbf{thaldur}, \textbf{thaltime}, \textbf{cmo} and \text{cyr} are highly collinear with other variables in the model.
+From the variance inflation factor we see that the variables \textbf{painexer},
+\textbf{cp}, \textbf{ekgmo}, \textbf{ekgyr}, \textbf{proto}, \textbf{thaldur},
+\textbf{thaltime}, \textbf{cmo} and \text{cyr} are highly collinear with other
+variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -384,31 +446,43 @@ From the variance inflation factor we see that the variables \textbf{painexer}, 
 	\label{q3-hun-screeplot}
 \end{figure}
 
-From the scree plot in Figure \ref{q3-hun-screeplot} we see that we keep 6 components.
+From the scree plot in Figure \ref{q3-hun-screeplot} we see that we keep 6
+components.
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single, title={Hungary PCA loadings}]{question3output/hunpcaloadings.txt}
+\lstinputlisting[frame=single, title={Hungary PCA
+loadings}]{question3output/hunpcaloadings.txt}
 
-We see that the first principle component is mostly formed of \textbf{proto}, \textbf{met}, \textbf{thaldur} and \textbf{thaltime} variables.
+We see that the first principle component is mostly formed of \textbf{proto},
+\textbf{met}, \textbf{thaldur} and \textbf{thaltime} variables.
 
-The second principle component is mostly formed of \textbf{cyr}, \textbf{ekgyr} and \textbf{pro} variables.
+The second principle component is mostly formed of \textbf{cyr}, \textbf{ekgyr}
+and \textbf{pro} variables.
 
-The third principle component is mostly formed of \textbf{cp}, \textbf{painexer} and \textbf{relrest} variables.
+The third principle component is mostly formed of \textbf{cp}, \textbf{painexer}
+and \textbf{relrest} variables.
 
-The fourth principle component is mostly formed of \textbf{nitr} and \textbf{pro} variables.
+The fourth principle component is mostly formed of \textbf{nitr} and
+\textbf{pro} variables.
 
-The fifth principle component is mostly formed of \textbf{rldv5e} and \textbf{rldv5} variables.
+The fifth principle component is mostly formed of \textbf{rldv5e} and
+\textbf{rldv5} variables.
 
-The sixth principle component is mostly formed of \textbf{ekgday} and \textbf{cday} variables.
+The sixth principle component is mostly formed of \textbf{ekgday} and
+\textbf{cday} variables.
 
 \subsubsection{Longbeach}
 
-After removing dummy variables and variables with at least $50\%$ NA data, we are left with 50 variables and 94 observations.
+After removing dummy variables and variables with at least $50\%$ NA data, we
+are left with 50 variables and 94 observations.
 
-\lstinputlisting[frame=single, title={Longbeach variance inflation factor}]{question3output/lonvif.txt}
+\lstinputlisting[frame=single, title={Longbeach variance inflation
+factor}]{question3output/lonvif.txt}
 
-From the variance inflation factor we see that the variables \textbf{cp}, \textbf{ekgyr}, \textbf{thaldur}, \textbf{met} and \textbf{cyr} are highly collinear with other variables in the model.
+From the variance inflation factor we see that the variables \textbf{cp},
+\textbf{ekgyr}, \textbf{thaldur}, \textbf{met} and \textbf{cyr} are highly
+collinear with other variables in the model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -418,41 +492,58 @@ From the variance inflation factor we see that the variables \textbf{cp}, \textb
 	\label{q3-lon-screeplot}
 \end{figure}
 
-From the scree plot in Figure \ref{q3-lon-screeplot} we see that we keep 11 components.
+From the scree plot in Figure \ref{q3-lon-screeplot} we see that we keep 11
+components.
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single, title={Longbeach PCA loadings}]{question3output/lonpcaloadings.txt}
+\lstinputlisting[frame=single, title={Longbeach PCA
+loadings}]{question3output/lonpcaloadings.txt}
 
-We see that the first principle component is mostly formed of \textbf{ekgyr}, \textbf{cyr} and \textbf{proto} variables.
+We see that the first principle component is mostly formed of \textbf{ekgyr},
+\textbf{cyr} and \textbf{proto} variables.
 
-The second principle component is mostly formed of \textbf{thaldur}, \textbf{met} variables.
+The second principle component is mostly formed of \textbf{thaldur},
+\textbf{met} variables.
 
-The third principle component is mostly formed of \textbf{htn}, \textbf{trestbps} and \textbf{cigs} variables.
+The third principle component is mostly formed of \textbf{htn},
+\textbf{trestbps} and \textbf{cigs} variables.
 
-The fourth principle component is mostly formed of \textbf{years}, \textbf{smoke} and \textbf{cigs} variables.
+The fourth principle component is mostly formed of \textbf{years},
+\textbf{smoke} and \textbf{cigs} variables.
 
-The fifth principle component is mostly formed of \textbf{thalrest}, \textbf{thalach} and \textbf{painexer} variables.
+The fifth principle component is mostly formed of \textbf{thalrest},
+\textbf{thalach} and \textbf{painexer} variables.
 
-The sixth principle component is mostly formed of \textbf{rcaprox}, \textbf{relrest} and \textbf{cp} variables.
+The sixth principle component is mostly formed of \textbf{rcaprox},
+\textbf{relrest} and \textbf{cp} variables.
 
-The seventh principle component is mostly formed of \textbf{ekgday}, \textbf{rldv5} and \textbf{thalach} variables.
+The seventh principle component is mostly formed of \textbf{ekgday},
+\textbf{rldv5} and \textbf{thalach} variables.
 
-The eight principle component is mostly formed of \textbf{diag}, \textbf{cday} and \textbf{om2} variables.
+The eight principle component is mostly formed of \textbf{diag}, \textbf{cday}
+and \textbf{om2} variables.
 
-The ninth principle component is mostly formed of \textbf{om1}, \textbf{cmo} and \textbf{ekgmo} variables.
+The ninth principle component is mostly formed of \textbf{om1}, \textbf{cmo} and
+\textbf{ekgmo} variables.
 
-The tenth principle component is mostly formed of \textbf{famhist}, \textbf{fbs} and \textbf{cday} variables.
+The tenth principle component is mostly formed of \textbf{famhist}, \textbf{fbs}
+and \textbf{cday} variables.
 
-The eleventh principle component is mostly formed of \textbf{ekgmo}, \textbf{trestbpd}, \textbf{cmo} and \textbf{laddist} variables.
+The eleventh principle component is mostly formed of \textbf{ekgmo},
+\textbf{trestbpd}, \textbf{cmo} and \textbf{laddist} variables.
 
 \subsubsection{Switzerland}
 
-After removing dummy variables and variables with at least $13\%$ NA data, we are left with 39 variables and 101 observations.
+After removing dummy variables and variables with at least $13\%$ NA data, we
+are left with 39 variables and 101 observations.
 
-\lstinputlisting[frame=single, title={Switzerland variance inflation factor}]{question3output/swivif.txt}
+\lstinputlisting[frame=single, title={Switzerland variance inflation
+factor}]{question3output/swivif.txt}
 
-From the variance inflation factor we see that the variables \textbf{ekgmo}, \textbf{ekgyr} and \textbf{cmo} are highly collinear with other variables in the model.
+From the variance inflation factor we see that the variables \textbf{ekgmo},
+\textbf{ekgyr} and \textbf{cmo} are highly collinear with other variables in the
+model.
 
 \begin{figure}[H]
 	\begin{center}
@@ -462,46 +553,74 @@ From the variance inflation factor we see that the variables \textbf{ekgmo}, \te
 	\label{q3-swi-screeplot}
 \end{figure}
 
-From the scree plot in Figure \ref{q3-swi-screeplot} we see that we keep 5 components.
+From the scree plot in Figure \ref{q3-swi-screeplot} we see that we keep 5
+components.
 
 We have the loadings of each components as follows.
 
-\lstinputlisting[frame=single, title={Switzerland PCA loadings}]{question3output/swipcaloadings.txt}
+\lstinputlisting[frame=single, title={Switzerland PCA
+loadings}]{question3output/swipcaloadings.txt}
 
-We see that the first principle component is mostly formed of \textbf{cmo}, \textbf{ekgmo}, \textbf{ekgyr} and \textbf{cyr} variables.
+We see that the first principle component is mostly formed of \textbf{cmo},
+\textbf{ekgmo}, \textbf{ekgyr} and \textbf{cyr} variables.
 
-The second principle component is mostly formed of \textbf{cp}, \textbf{thalrest}, \textbf{painloc}, and \textbf{painexer} variables.
+The second principle component is mostly formed of \textbf{cp},
+\textbf{thalrest}, \textbf{painloc}, and \textbf{painexer} variables.
 
-The third principle component is mostly formed of \textbf{trestbps} and \textbf{age} variables.
+The third principle component is mostly formed of \textbf{trestbps} and
+\textbf{age} variables.
 
-The fourth principle component is mostly formed of \textbf{tpeakbps}, \textbf{tpeakbpd} and \textbf{oldpeak} variables.
+The fourth principle component is mostly formed of \textbf{tpeakbps},
+\textbf{tpeakbpd} and \textbf{oldpeak} variables.
 
-The fifth principle component is mostly formed of \textbf{thaldur} and \textbf{laddist} variables.
+The fifth principle component is mostly formed of \textbf{thaldur} and
+\textbf{laddist} variables.
 
 \newpage
 \subsection{Question 4}
 
 In order to distinguish patients based on their disease through discriminant
-analysis, I had to create four models, one for each of the datasets.
+analysis, I had to create four models, one for each of the datasets. As the
+variable \textit{num} has 5 different types it could be: \textit{0, 1, 2, 3 \&
+4}, I had to use multiclass LDA to perform my analysis. I have included the
+output of the multiclass LDA even though I will be performing my analysis upon
+the related historgrams.
 
 \subsubsection{Cleveland}
 
 \lstinputlisting[frame=single]{Q4_output/q4-clev.txt}
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Clev-Histgram.png}
-	\end{center}
-	\caption{Histergram for discriminant analysis of Cleveland}
-	\label{q4_clev_historgram}
-\end{figure}
+We can see from the above output that LDA has produced 4 classifiers and
+plotting their histograms \ref{q4_clev_historgrams} shows us that only the
+\textbf{first LDA classifier} is any good as it was able to clearly seperate 4
+of the five types, with the final type (group) spread between types \textit{3 \&
+4}. The \textbf{third and fourth LDA classifiers} are the worst as they are
+seemingly unable to seperate any of the types from each other. The
+\textbf{second LDA classifier} is it seems is only able to sperate types
+\textit{0, 3 \& 4} from types \textit{1 \& 2} it seems so is more helpful to us
+that the third and fourth but it is nowhere near as helpful as the first LDA
+classifier.
 
 \begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Clev-scatter.png}
-	\end{center}
-	\caption{Scatter plot for discriminant analysis of Cleveland}
-	\label{q4_clev_scatter}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{First LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Clev-Hist1.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Second LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Clev-Hist2.png}
+	\end{subfigure}
+
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Third LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Clev-Hist3.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Fourth LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Clev-Hist4.png}
+	\end{subfigure}
+	\caption{Histergram for discriminant analysis of Cleveland}
+	\label{q4_clev_historgrams}
 \end{figure}
 
 \newpage
@@ -509,20 +628,32 @@ analysis, I had to create four models, one for each of the datasets.
 
 \lstinputlisting[frame=single]{Q4_output/Q4-hung.txt}
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Hung-Histgram.png}
-	\end{center}
-	\caption{Histergram for discriminant analysis of Hungary}
-	\label{q4_hung_historgram}
-\end{figure}
+From the above output from the LDA of my Hungary model we that we have again
+produced 4 LDA classifiers which I then produced the historgrams
+\ref{q4_hung_historgrams} for. Sadly, they are able to tell us much about the
+data as it seems as though non of them were able to differentiate between any of
+the different types.
 
 \begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Hung-scatter.png}
-	\end{center}
-	\caption{Scatter plot for discriminant analysis of Hungary}
-	\label{q4_hung_scatter}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{First LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Hung-Hist1.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Second LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Hung-Hist2.png}
+	\end{subfigure}
+
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Third LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Hung-Hist3.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Fourth LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Hung-Hist4.png}
+	\end{subfigure}
+	\caption{Histergram for discriminant analysis of Hungary}
+	\label{q4_hung_historgrams}
 \end{figure}
 
 \newpage
@@ -530,20 +661,32 @@ analysis, I had to create four models, one for each of the datasets.
 
 \lstinputlisting[frame=single]{Q4_output/Q4-long.txt}
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Long-Histgram.png}
-	\end{center}
-	\caption{Histergram for discriminant analysis of Longbeach}
-	\label{q4_long_historgram}
-\end{figure}
+Via the above output from the LDA of my Longbeach model we see that 4 LDA
+classifiers have been created, for which I have produced historgrams
+\ref{q4_long_historgrams} for. Sadly, they are able to tell us much about the
+model data as it not one of the classeifiers were able to differentiate between
+the different types, even less so than with my Hungary model.
 
 \begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Long-scatter.png}
-	\end{center}
-	\caption{Scatter plot for discriminant analysis of Longbeach}
-	\label{q4_long_scatter}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{First LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Long-Hist1.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Second LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Long-Hist2.png}
+	\end{subfigure}
+
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Third LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Long-Hist3.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Fourth LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Long-Hist4.png}
+	\end{subfigure}
+	\caption{Histergram for discriminant analysis of Longbeach}
+	\label{q4_long_historgrams}
 \end{figure}
 
 \newpage
@@ -551,22 +694,50 @@ analysis, I had to create four models, one for each of the datasets.
 
 \lstinputlisting[frame=single]{Q4_output/Q4-swit.txt}
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Swit-Histgram.png}
-	\end{center}
-	\caption{Histergram for discriminant analysis of Switzerland}
-	\label{q4_swit_historgram}
-\end{figure}
+As per usual, the LDA analysis of my Switzerland model produced 4 different LDA
+classifiers which I once again turned into historgrams \ref{q4_swit_historgrams}
+so that I could better analysis them.  Straight away we can see that the
+\textbf{first LDA classifier} was able to seperate types \textit{0 \& 1} from
+types \textit{2, 3 \& 4} while the \textbf{second LDA classifier} was able to
+seperate type \textit{4} from types \textit{0, 1, 2 \& 3}. The \textbf{third LDA
+classifier} is also able to seperate type \textit{4} from the rest whilst sadly
+the \textbf{fourth LDA classifier} is seemingly unable to differentiate between
+any of the 5 types.
 
 \begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=12cm]{Q4_pics/Swit-scatter.png}
-	\end{center}
-	\caption{Scatter plot for discriminant analysis of Switzerland}
-	\label{q4_swit_scatter}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{First LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Swit-Hist1.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Second LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Swit-Hist2.png}
+	\end{subfigure}
+
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Third LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Swit-Hist3.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\caption{Fourth LDA classifier}
+		\includegraphics[width=0.9\linewidth, height=10cm]{Q4_pics/Swit-Hist4.png}
+	\end{subfigure}
+	\caption{Histergrams for discriminant analysis of Switzerland}
+	\label{q4_swit_historgrams}
 \end{figure}
 
+\newpage
 \section{Summary}
-
+Overall we believe that this trial has shown that the type and intensity of the
+exercise that you do has more of an effect on you getting a heart disease than
+whether or not you take performance enhancing drugs. Although there were 4
+datasets to analysis, a lot of the observations where NA which limited the
+amount of observations we were able to use in our research which makes it more
+difficult to draw any meaningful conclusions from our results. For instance,
+in \textbf{question four} we had to remove the \textit{lmt} form our models for
+\textbf{Cleveland} and \textbf{Switzerland} but not \textbf{Hungary} or
+\textbf{Longbeach} in order for the LDA to work. This could be the reason why we
+were unable to draw any meaniful conclusions from their historgrams
+\ref{q4_hung_historgrams} \& \ref{q4_long_historgrams} however it could also be
+the fact that there were not that many observations avalible to use.
 \end{document}

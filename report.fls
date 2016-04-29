@@ -80,6 +80,34 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
+INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.aux
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.aux
 OUTPUT /home/huaraz2/Desktop/multivarite/Project/report.aux
@@ -103,7 +131,29 @@ OUTPUT /home/huaraz2/Desktop/multivarite/Project/report.pdf
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.out
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.out
 OUTPUT /home/huaraz2/Desktop/multivarite/Project/report.out
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
@@ -117,40 +167,74 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/Intcormatrix.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/Intcormatrix.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/Intcormatrix.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot5.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/intro files/intplot5.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box1.txt
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box2.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box2.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box2.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box3.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box3.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box3.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box4.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box4.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box4.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box5.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box5.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/box5.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-Maovjames.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-Maovjames.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-Maovjames.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james2.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james2.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james2.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james3.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james3.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q1 txt files/Q1-james3.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_1.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_2.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_2.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q2_output/Q2_2_2.txt
@@ -199,6 +283,9 @@ INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/clescreeplot-eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/clepcaloadings.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/clepcaloadings.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/clepcaloadings.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunvif.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunvif.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunvif.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunscreeplot.eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunscreeplot.eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunscreeplot.eps
@@ -211,6 +298,9 @@ INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunscreeplot-eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunpcaloadings.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunpcaloadings.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/hunpcaloadings.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonvif.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonvif.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonvif.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonscreeplot.eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonscreeplot.eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonscreeplot.eps
@@ -223,6 +313,9 @@ INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonscreeplot-eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonpcaloadings.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonpcaloadings.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/lonpcaloadings.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swivif.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swivif.txt
+INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swivif.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swiscreeplot.eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swiscreeplot.eps
 INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swiscreeplot.eps
@@ -238,47 +331,80 @@ INPUT /home/huaraz2/Desktop/multivarite/Project/question3output/swipcaloadings.t
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/q4-clev.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/q4-clev.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/q4-clev.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-scatter.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Clev-Hist4.png
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-hung.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-hung.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-hung.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-scatter.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Hung-Hist4.png
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-long.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-long.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-long.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-scatter.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Long-Hist4.png
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-swit.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-swit.txt
 INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_output/Q4-swit.txt
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Histgram.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-scatter.png
-INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-scatter.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist1.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist2.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist3.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist4.png
+INPUT /home/huaraz2/Desktop/multivarite/Project/Q4_pics/Swit-Hist4.png
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.aux
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.out
 INPUT /home/huaraz2/Desktop/multivarite/Project/report.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

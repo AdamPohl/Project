@@ -5,6 +5,7 @@ library(asbio)
 library(biotools)
 library(car)
 library(MASS)
+library(Rmisc)
 
 
 ## Importing useful_test.r (from learning central)
@@ -178,7 +179,7 @@ png(filename="intro files/intplot3.png")
 bv.boxplot(age, chol, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="chol")
 dev.off()
 png(filename="intro files/intplot4.png")
-bv.boxplot(age, thalech, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="thalech")
+# bv.boxplot(age, thalech, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="thalech")
 dev.off()
 png(filename="intro files/intplot5.png")
 bv.boxplot(age,oldpeak, ID.out = TRUE, bg.out = "red", xlab="Age", ylab="oldpeak")
@@ -398,22 +399,27 @@ clevmod <- lda(num ~ ., data = clevdata)
 # clevmod
 clevmod2 <- predict(clevmod)
 ldahist(data=clevmod2$x[,1], g=clevdata$num)
-plot(clevmod2$x[, 1], clevmod2$x[, 2], col = clevdata$num, main = "scatterplot for Clevland model")
-
+ldahist(data=clevmod2$x[,2], g=clevdata$num)
+ldahist(data=clevmod2$x[,3], g=clevdata$num)
+ldahist(data=clevmod2$x[,4], g=clevdata$num)
 
 ## Hungary model ##
 hungmod <- lda(num ~ ., data = ex3dathun)
 # hungmod
 hungmod2 <- predict(clevmod)
 ldahist(data=hungmod2$x[,1], g=ex3dathun$num)
-plot(hungmod2$x[, 1], hungmod2$x[, 2], col = ex3dathun$num, main = "scatterplot for Hungary model")
+ldahist(data=hungmod2$x[,2], g=ex3dathun$num)
+ldahist(data=hungmod2$x[,3], g=ex3dathun$num)
+ldahist(data=hungmod2$x[,4], g=ex3dathun$num)
 
 ## Longbeach model ##
 longmod <- lda(num ~ ., data = ex3datlon)
 # longmod
 longmod2 <- predict(clevmod)
 ldahist(data=longmod2$x[,1], g=ex3datlon$num)
-plot(longmod2$x[, 1], longmod2$x[, 2], col = ex3datlon$num, main = "scatterplot for Longbeach model")
+ldahist(data=longmod2$x[,2], g=ex3datlon$num)
+ldahist(data=longmod2$x[,3], g=ex3datlon$num)
+ldahist(data=longmod2$x[,4], g=ex3datlon$num)
 
 ## Switzerland model ##
 swidata <- subset(ex3datswi, select= c(-lmt))
@@ -421,4 +427,6 @@ switmod <- lda(num ~ ., data = swidata)
 # switmod
 switmod2 <- predict(switmod)
 ldahist(data=switmod2$x[,1], g=swidata$num)
-plot(switmod2$x[, 1], switmod2$x[, 2], col = swidata$num, main = "scatterplot for Switzerland model")
+ldahist(data=switmod2$x[,2], g=swidata$num)
+ldahist(data=switmod2$x[,3], g=swidata$num)
+ldahist(data=switmod2$x[,4], g=swidata$num)
